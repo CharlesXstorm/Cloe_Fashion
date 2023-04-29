@@ -1,10 +1,79 @@
-import React from "react";
+import React, { useState } from "react";
 import { Stack, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import style from "./NavBar.module.css";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
-const NavBar = ({ opacity }) => {
+const navVariants = {
+  hidden: {
+    width: "50px",
+    height: "50px",
+    scale: 0,
+    borderRadius: "100%",
+    left: "-2vh",
+    transition: {
+      duration: 1.5,
+      ease: "easeInOut"
+    }
+  },
+  visible: {
+    width: "500px",
+    height: "500px",
+    scale: 10,
+
+    borderRadius: "100%",
+    left: 0,
+    transition: {
+      duration: 1.5,
+      ease: "easeInOut"
+    }
+  }
+};
+
+const linkVariants = {
+  hidden: {
+    x: -500,
+    transition: {
+      // duration: 1.5,
+      ease: "easeInOut"
+    }
+  },
+  visible: {
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 200,
+      // delay: 1,
+      // duration: 1.5,
+      ease: "easeInOut"
+    }
+  }
+};
+
+const linkWrap = {
+  hidden: {
+    transition: {
+      staggerChildren: 0.2,
+      ease: "easeInOut"
+    }
+  },
+  visible: {
+    transition: {
+      // type: "spring",
+      delayChildren: 0.6,
+      staggerChildren: 0.4,
+      when: "beforeChildren",
+      ease: "easeInOut"
+    }
+  }
+};
+
+const NavBar = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const clickHandler = () => {
+    setClicked((prev) => !prev);
+  };
   return (
     <Stack
       sx={{ position: "absolute", top: "0", left: "0", width: "100vw" }}
@@ -32,6 +101,122 @@ const NavBar = ({ opacity }) => {
           />
         </motion.svg>
       </Stack>
+
+      {/*mobile navbtn init*/}
+      <Stack
+        sx={{
+          width: "60px",
+          margin: "10px",
+          position: "absolute",
+          left: "0px",
+          top: "0px",
+          zIndex: 6,
+          display: { lg: "none", xs: "block" },
+          justifyContent: "center",
+          alignItems: "center"
+        }}
+        onClick={clickHandler}
+      >
+        <Box
+          className={`${style.wrapper} ${clicked ? style.wrapperClicked : ""}`}
+        >
+          <Box
+            className={`${style.collapse1} ${
+              clicked ? style.collapse1Clicked : ""
+            }`}
+          ></Box>
+          <Box
+            className={`${style.collapse2} ${
+              clicked ? style.collapse2Clicked : ""
+            }`}
+          ></Box>
+          <Box
+            className={`${style.collapse3} ${
+              clicked ? style.collapse3Clicked : ""
+            }`}
+          ></Box>
+        </Box>
+      </Stack>
+      {/*mobile navbtn ends*/}
+
+      {/*mobile collapse init*/}
+      <AnimatePresence mode="wait">
+        {clicked && (
+          <Stack
+            sx={{
+              position: "absolute",
+              top: "0px",
+              left: "0px",
+              right: "0px",
+              bottom: "0px",
+              display: { lg: "none", xs: "block" },
+              width: "100vw",
+              height: "100vh",
+              overflow: "hidden"
+            }}
+          >
+            <motion.div
+              variants={linkWrap}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              style={{
+                position: "inherit",
+                top: "80px",
+                left: "80px",
+
+                zIndex: 9
+              }}
+            >
+              <Link className={style.link} to="/work">
+                <motion.p
+                  variants={linkVariants}
+                  style={{
+                    margin: "40px",
+                    fontFamily: "newyork",
+                    fontSize: "40px"
+                  }}
+                >
+                  Work.
+                </motion.p>
+              </Link>
+              <Link className={style.link} to="/work">
+                <motion.p
+                  variants={linkVariants}
+                  style={{
+                    margin: "40px",
+                    fontFamily: "newyork",
+                    fontSize: "40px"
+                  }}
+                >
+                  About.
+                </motion.p>
+              </Link>
+              <Link className={style.link} to="/work">
+                <motion.p
+                  variants={linkVariants}
+                  style={{
+                    margin: "40px",
+                    fontFamily: "newyork",
+                    fontSize: "40px"
+                  }}
+                >
+                  Contact.
+                </motion.p>
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={navVariants}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              className={style.navback}
+            ></motion.div>
+          </Stack>
+        )}
+      </AnimatePresence>
+      {/*mobile collapse ends*/}
+
       <Stack
         direction={"row"}
         justifyContent="space-between"
@@ -40,6 +225,7 @@ const NavBar = ({ opacity }) => {
           position: "absolute",
           right: "20px",
           display: { lg: "flex", xs: "none" },
+          zIndex: 10
         }}
       >
         <Link className={style.link} to="/work">

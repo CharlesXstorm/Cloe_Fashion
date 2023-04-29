@@ -5,22 +5,21 @@ import LoaderHome from "../components/LoaderHome";
 import Landing from "../components/Landing";
 import $ from "jquery";
 
-const Home = ({ setFillColor }) => {
+const Home = () => {
   const [hasLoaded, setHasLoaded] = useState(true);
   const [vWidth, setVwidths] = useState(1280);
 
-  const [hasLanded, setHasLanded] = useState(false);
+  // const [hasLanded, setHasLanded] = useState(!false);
 
   useEffect(() => {
+    $(() => {
+      $(window).on("load", () => {
+        setHasLoaded(false);
+      });
+    });
     setVwidths(window.innerWidth);
   }, []);
 
-  $(() => {
-    setTimeout(() => {
-      setHasLanded(true);
-      setFillColor(true);
-    }, 8000);
-  });
   return (
     <>
       {ReactDOM.createPortal(
@@ -31,12 +30,11 @@ const Home = ({ setFillColor }) => {
         />,
         document.getElementById("loader")
       )}
-      {hasLanded && (
-        <Landing
-          width={vWidth < 1024 ? "180%" : "100%"}
-          scale={vWidth > 1280 ? 1.3 : 1}
-        />
-      )}
+
+      <Landing
+        width={vWidth < 1024 ? "180%" : "100%"}
+        scale={vWidth > 1280 ? 1.3 : 1}
+      />
     </>
   );
 };

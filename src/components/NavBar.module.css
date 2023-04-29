@@ -2,3 +2,106 @@
   text-decoration: none;
   color: #fff;
 }
+.navback {
+  position: inherit;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: #00000080;
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  -moz-backdrop-filter: blur(2px);
+}
+.wrapper {
+  width: 100%;
+  margin: auto;
+  align-self: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  border: 2px solid white;
+  transition: all 2s ease;
+}
+.collapse1 {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 2s ease;
+}
+.collapse2 {
+  width: 80%;
+  background-color: #fff;
+  padding-top: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 2s ease;
+}
+
+.wrapperClicked {
+  width: 100%;
+  transform: translateY(10px);
+  /* align-self: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px; */
+  border: none;
+  transition: all 2s ease;
+}
+
+.collapse1Clicked {
+  width: 60%;
+  /* padding: 0.5em; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transform: rotate(45deg);
+  /* transform-origin: 0; */
+  transition: all 2s ease;
+}
+.collapse2Clicked {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transform: rotate(-45deg);
+  transform: skewY(-15deg);
+  transition: all 2s ease;
+}
+.collapse3 {
+  width: 60%;
+  background-color: #fff;
+  padding-top: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transform: translateY(0px);
+  border-radius: 0%;
+  transition: all 2s ease;
+}
+.collapse3Clicked {
+  width: 0%;
+  /* height: 3em; */
+  padding-top: 0px;
+  padding: 0.2em;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #ffffff;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  transform: translateY(25px);
+  transition: all 2s ease;
+}

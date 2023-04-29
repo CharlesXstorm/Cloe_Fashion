@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Typography, Box } from "@mui/material";
+import { Stack, Box } from "@mui/material";
 import { motion } from "framer-motion";
 import CloeBack from "./CloeBack";
 
@@ -23,7 +23,7 @@ const Landing = ({ width, scale }) => {
           bottom: "0px",
           width: "auto",
           overflow: "hidden",
-          zIndex: "1",
+          zIndex: "1"
         }}
       >
         <svg
@@ -38,14 +38,14 @@ const Landing = ({ width, scale }) => {
           enableBackground={`new 0 0 1280 812`}
           style={{
             transform: `scale(${scale})`,
-            transformOrigin: "0",
+            transformOrigin: "0"
           }}
         >
           <g>
             <motion.path
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
-              transition={{ duration: 6, ease: "easeInOut" }}
+              transition={{ duration: 6, delay: 6, ease: "easeInOut" }}
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"

@@ -8,17 +8,18 @@ import {
   useMotionValue,
 } from "framer-motion";
 import $ from "jquery";
+import NavBar from "./NavBar";
 
 const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
   // const [vWidth, setVwidth] = useState("");
   let cloeRef = useRef(null);
   let lineRef = useRef(null);
 
-  $(() => {
-    setTimeout(() => {
-      setHasLoaded(false);
-    }, 4000);
-  });
+  // $(() => {
+  //   setTimeout(() => {
+  //     setHasLoaded(false);
+  //   }, 4000);
+  // });
 
   // const width = useMotionValue("2px");
 
@@ -61,6 +62,7 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
             right: "0px",
             width: "100vw",
             height: "100vh",
+            zIndex: 3,
           }}
         >
           <motion.div
@@ -68,6 +70,7 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
             initial={{ height: "0vh" }}
             transition={{
               duration: 4,
+              delay: 2,
               times: [0, 0.7, 1],
               ease: "easeInOut",
             }}
@@ -91,8 +94,11 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
               )}px` /*{ lg: lgleft, sm: smleft, xs: xsleft }*/,
               top: "0px",
               backgroundColor: "#000",
+              overflow: "hidden",
             }}
-          ></motion.div>
+          >
+            <NavBar />
+          </motion.div>
           <Stack
             m="auto"
             width={"100%"}
