@@ -7,6 +7,7 @@ const Landing = ({ width, scale }) => {
   // console.log(scale);
   return (
     <Stack
+      position="fixed"
       bgcolor={"#000"}
       color={"#fff"}
       height={"100vh"}
@@ -45,7 +46,7 @@ const Landing = ({ width, scale }) => {
             <motion.path
               initial={{ pathLength: 0 }}
               animate={{ pathLength: 1 }}
-              transition={{ duration: 6, delay: 6, ease: "easeInOut" }}
+              transition={{ duration: 4, delay: 4, ease: "easeInOut" }}
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"

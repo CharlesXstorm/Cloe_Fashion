@@ -173,7 +173,7 @@ const NavBar = () => {
                   variants={linkVariants}
                   style={{
                     margin: "40px",
-                    fontFamily: "newyork",
+                    fontFamily: "newyorkregular",
                     fontSize: "40px"
                   }}
                 >
@@ -185,7 +185,7 @@ const NavBar = () => {
                   variants={linkVariants}
                   style={{
                     margin: "40px",
-                    fontFamily: "newyork",
+                    fontFamily: "newyorkregular",
                     fontSize: "40px"
                   }}
                 >
@@ -197,7 +197,7 @@ const NavBar = () => {
                   variants={linkVariants}
                   style={{
                     margin: "40px",
-                    fontFamily: "newyork",
+                    fontFamily: "newyorkregular",
                     fontSize: "40px"
                   }}
                 >

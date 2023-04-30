@@ -18,7 +18,7 @@ const CloeBack = ({ width }) => {
           overflow: "hidden",
           top: "0px",
           left: "0px",
-          bottom: "0px",
+          bottom: "0px"
         }}
       >
         {
@@ -33,12 +33,12 @@ const CloeBack = ({ width }) => {
             position: "inherit",
             display: { lg: "block", xs: "block" },
             right: { lg: "150px", xs: "calc((100vw-100%)/2)" },
-            marginLeft: { lg: "", xs: "40px" },
+            marginLeft: { lg: "", xs: "40px" }
           }}
         >
           <Typography
             mt="30vh"
-            sx={{ marginTop: { lg: "30vh", xs: "50vh" } }}
+            sx={{ marginTop: { lg: "30vh", xs: "60vh" } }}
             fontSize={"100px"}
             fontFamily={"mutalis_fashion_personal_usRg"}
             color={"#fff"}
@@ -61,7 +61,11 @@ const CloeBack = ({ width }) => {
           </Typography>
           <Typography
             mt="5vh"
-            sx={{ marginTop: { lg: "5vh", xs: "0.5vh" } }}
+            sx={{
+              marginTop: { lg: "5vh", xs: "0px" },
+              top: { lg: 0, xs: "80vh" },
+              position: { lg: "relative", xs: "absolute" }
+            }}
             fontSize={"100px"}
             fontFamily={"mutalis_fashion_personal_usRg"}
             color={"#fff"}

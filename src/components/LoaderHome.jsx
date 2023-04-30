@@ -5,7 +5,7 @@ import {
   motion,
   AnimatePresence,
   useMotionValueEvent,
-  useMotionValue,
+  useMotionValue
 } from "framer-motion";
 import $ from "jquery";
 import NavBar from "./NavBar";
@@ -62,7 +62,7 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
             right: "0px",
             width: "100vw",
             height: "100vh",
-            zIndex: 3,
+            zIndex: 3
           }}
         >
           <motion.div
@@ -70,9 +70,9 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
             initial={{ height: "0vh" }}
             transition={{
               duration: 4,
-              delay: 2,
+              // delay: 2,
               times: [0, 0.7, 1],
-              ease: "easeInOut",
+              ease: "easeInOut"
             }}
             exit={{
               height: ["0vh", "100vh", "100vh"],
@@ -80,9 +80,9 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
               left: [
                 `${Math.floor(vWidth / 2)}px`,
                 `${Math.floor(vWidth / 2)}px`,
-                `0px`,
+                `0px`
               ],
-              originX: 0,
+              originX: 0
             }}
             style={{
               position: "absolute",
@@ -94,7 +94,7 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
               )}px` /*{ lg: lgleft, sm: smleft, xs: xsleft }*/,
               top: "0px",
               backgroundColor: "#000",
-              overflow: "hidden",
+              overflow: "hidden"
             }}
           >
             <NavBar />
