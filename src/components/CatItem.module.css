@@ -1,0 +1,32 @@
+.cont:hover .gele {
+  transform: scale(1.1);
+  transition: all 4s linear;
+  cursor: pointer;
+}
+.clipImg {
+  width: 100%;
+  height: 625px;
+  clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+}
+.cont:hover .gele::after {
+  opacity: 0;
+  transition: all 4s linear;
+}
+
+.gele {
+  transform: scale(1);
+  transition: all 4s linear;
+}
+
+.gele::after {
+  content: "";
+  position: absolute;
+  /* z-index: 10; */
+  width: 500px;
+  height: 625px;
+  opacity: 1;
+  backdrop-filter: grayscale(1);
+  -webkit-backdrop-filter: grayscale(1);
+  -moz-backdrop-filter: grayscale(1);
+  transition: all 4s linear;
+}

@@ -62,8 +62,9 @@ const CloeBack = ({ width }) => {
           <Typography
             mt="5vh"
             sx={{
+              marginRight: { lg: "15vw", md: "", xs: "" },
               marginTop: { lg: "5vh", xs: "0px" },
-              top: { lg: 0, xs: "80vh" },
+              top: { lg: 0, xs: "75vh" },
               position: { lg: "relative", xs: "absolute" }
             }}
             fontSize={"100px"}

@@ -10,7 +10,7 @@ import {
 import $ from "jquery";
 import NavBar from "./NavBar";
 
-const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
+const LoaderHome = ({ vWidth, setVheight, hasLoaded, setHasLoaded }) => {
   // const [vWidth, setVwidth] = useState("");
   let cloeRef = useRef(null);
   let lineRef = useRef(null);
@@ -42,10 +42,9 @@ const LoaderHome = ({ vWidth, hasLoaded, setHasLoaded }) => {
   // });
 
   // useEffect(() => {
-  //   setVwidth(cloeRef.current.clientWidth);
-  //   setVwidths(cloeRef.current.clientWidth);
-
-  // }, [setVwidths]);
+  //   // setVwidth(cloeRef.current.clientWidth);
+  //   setVheight(cloeRef.current.clientHeight);
+  // }, []);
 
   return (
     <AnimatePresence mode="wait">

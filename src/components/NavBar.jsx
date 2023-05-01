@@ -76,7 +76,7 @@ const NavBar = () => {
   };
   return (
     <Stack
-      sx={{ position: "absolute", top: "0", left: "0", width: "100vw" }}
+      sx={{ position: "fixed", top: "0", left: "0", width: "100vw" }}
       p="20px"
       direction={"row"}
       justifyContent={"center"}
@@ -168,23 +168,25 @@ const NavBar = () => {
                 zIndex: 9
               }}
             >
-              <Link className={style.link} to="/work">
+              <Link className={style.link} to="/work" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
                     margin: "40px",
+                    marginLeft: { md: "40px", xs: "5px" },
                     fontFamily: "newyorkregular",
                     fontSize: "40px"
                   }}
                 >
-                  Work.
+                  Models.
                 </motion.p>
               </Link>
-              <Link className={style.link} to="/work">
+              <Link className={style.link} to="/about" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
                     margin: "40px",
+                    marginLeft: { md: "40px", xs: "5px" },
                     fontFamily: "newyorkregular",
                     fontSize: "40px"
                   }}
@@ -192,11 +194,12 @@ const NavBar = () => {
                   About.
                 </motion.p>
               </Link>
-              <Link className={style.link} to="/work">
+              <Link className={style.link} to="/contact" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
                     margin: "40px",
+                    marginLeft: { md: "40px", xs: "5px" },
                     fontFamily: "newyorkregular",
                     fontSize: "40px"
                   }}
@@ -229,7 +232,7 @@ const NavBar = () => {
         }}
       >
         <Link className={style.link} to="/work">
-          <Typography fontFamily={"newyorkregular"}>Work</Typography>
+          <Typography fontFamily={"newyorkregular"}>Models</Typography>
         </Link>
         <Link className={style.link} to="/about">
           <Typography fontFamily={"newyorkregular"}>About</Typography>

@@ -9,11 +9,12 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 function App() {
+  const [backdrop, setBackDrop] = useState("#000");
   return (
-    <Box bgcolor={"#000"} m="auto" width={"100%"}>
+    <Box bgcolor={backdrop} m="auto" width={"100%"}>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setBackDrop={setBackDrop} />} />
         <Route path="/work" element={<Work />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

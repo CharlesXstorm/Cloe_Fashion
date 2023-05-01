@@ -14,10 +14,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ::-webkit-scrollbar {
+  background: transparent;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border: none;
+  outline: none;
+} */

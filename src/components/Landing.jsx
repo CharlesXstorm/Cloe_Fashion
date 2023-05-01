@@ -1,9 +1,10 @@
 import React from "react";
-import { Stack, Box } from "@mui/material";
+import { Stack, Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import CloeBack from "./CloeBack";
+import style from "./Landing.module.css";
 
-const Landing = ({ width, scale }) => {
+const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
   // console.log(scale);
   return (
     <Stack
@@ -13,7 +14,7 @@ const Landing = ({ width, scale }) => {
       height={"100vh"}
       width={"100%"}
       m={"0px"}
-      sx={{ overflow: "hidden" }}
+      sx={{ overflow: "hidden", top: 0, left: 0 }}
     >
       <Box
         sx={{
@@ -22,7 +23,7 @@ const Landing = ({ width, scale }) => {
           right: "0px",
           top: "0px",
           bottom: "0px",
-          width: "auto",
+          width: "100vw",
           overflow: "hidden",
           zIndex: "1"
         }}
@@ -45,8 +46,14 @@ const Landing = ({ width, scale }) => {
           <g>
             <motion.path
               initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 4, delay: 4, ease: "easeInOut" }}
+              animate={{
+                pathLength: 1,
+                transition: { duration: 4, delay: 4, ease: "easeInOut" }
+              }}
+              exit={{
+                pathLength: 0,
+                transition: { duration: 2, ease: "easeInOut" }
+              }}
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
@@ -88,8 +95,14 @@ const Landing = ({ width, scale }) => {
             />
             <motion.path
               initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 4, ease: "easeInOut" }}
+              animate={{
+                pathLength: 1,
+                transition: { duration: 4, delay: 4, ease: "easeInOut" }
+              }}
+              exit={{
+                pathLength: 0,
+                transition: { duration: 2, ease: "easeInOut" }
+              }}
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
@@ -104,8 +117,14 @@ const Landing = ({ width, scale }) => {
             />
             <motion.path
               initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 4, ease: "easeInOut" }}
+              animate={{
+                pathLength: 1,
+                transition: { duration: 4, delay: 4, ease: "easeInOut" }
+              }}
+              exit={{
+                pathLength: 0,
+                transition: { duration: 2, ease: "easeInOut" }
+              }}
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
@@ -124,8 +143,14 @@ const Landing = ({ width, scale }) => {
             />
             <motion.path
               initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ duration: 3, ease: "easeInOut" }}
+              animate={{
+                pathLength: 1,
+                transition: { duration: 3, delay: 4, ease: "easeInOut" }
+              }}
+              exit={{
+                pathLength: 0,
+                transition: { duration: 1, ease: "easeInOut" }
+              }}
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
@@ -147,6 +172,48 @@ const Landing = ({ width, scale }) => {
           </g>
         </svg>
       </Box>
+      <Box
+        sx={{
+          position: "absolute",
+          zIndex: 1,
+          top: { lg: "70vh", xs: "50vh" },
+          left: { lg: "15em", xs: "4em" }
+        }}
+        onClick={() => {
+          setIsExploring(true);
+          setBackDrop("#fff");
+        }}
+      >
+        <motion.div
+          whileHover={{
+            backgroundColor: "#fff",
+            color: "#000",
+            scale: 1.1,
+            cursor: "pointer",
+            transition: {
+              type: "spring",
+              stiffness: 500,
+              ease: "easeInOut"
+            }
+          }}
+          style={{
+            padding: "1em",
+            borderRadius: "10px",
+            border: "2px solid #fff",
+            justifyContent: "center"
+          }}
+        >
+          <Typography fontFamily={"newyorkregular"} fontSize={"25px"}>
+            Explore
+          </Typography>
+        </motion.div>
+      </Box>
+      <motion.div
+        className={style.circleTrans}
+        initial={{ originX: 0 }}
+        exit={{ scale: 3000, top: 10, originX: 0 }}
+        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
+      ></motion.div>
       <CloeBack width={width} />
     </Stack>
   );
