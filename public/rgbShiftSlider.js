@@ -23,7 +23,7 @@
     const images = [
       "./images/Queenpix.png",
       "./images/okay.png",
-      "./images/beauty.png",
+      "./images/beauty.png"
     ];
 
     ///////////////////////////////
@@ -35,7 +35,7 @@
       stageWidth: 694, //896, //1920,
       stageHeight: 1040, //1229, //1080,
 
-      displacementImage: "assets/displace-circle.png",
+      displacementImage: "./images/displace-circle.png",
       fullScreen: true,
       transitionDuration: 0.35, // must be 0.1 > transitionGhostDuration
       transitionGhostDuration: 0.25,
@@ -44,7 +44,7 @@
       mouseDispIntensity: 3,
       interactive: true,
       autoPlay: true,
-      autoPlaySpeed: 5000,
+      autoPlaySpeed: 5000
     };
 
     options.slideImages = options.hasOwnProperty("slideImages")
@@ -123,7 +123,7 @@
       options.stageWidth,
       options.stageHeight,
       {
-        transparent: true,
+        transparent: true
       }
     ); // transparent: true
 
@@ -142,7 +142,7 @@
 
     const ghostEl = {
       x: 0,
-      y: 0,
+      y: 0
     };
 
     var posx = 0,
@@ -209,17 +209,17 @@
     function build_RGBcontainers() {
       redChannelFilter = new PIXI.filters.ColorMatrixFilter();
       redChannelFilter.matrix = [
-        1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,
+        1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
       ];
 
       greenChannelFilter = new PIXI.filters.ColorMatrixFilter();
       greenChannelFilter.matrix = [
-        0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
       ];
 
       blueChannelFilter = new PIXI.filters.ColorMatrixFilter();
       blueChannelFilter.matrix = [
-        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0
       ];
 
       channelsContainer.push(
@@ -298,7 +298,7 @@
       // init ghost x value
       TweenMax.set(ghostEl, {
         x: 0,
-        ease: Power0.easeOut,
+        ease: Power0.easeOut
       });
 
       // init basetimeline
@@ -309,7 +309,7 @@
           // fake user gesture from left to right
           TweenMax.to(ghostEl, options.transitionGhostDuration, {
             x: screen.width,
-            ease: Power0.easeOut,
+            ease: Power0.easeOut
           });
         },
 
@@ -340,7 +340,7 @@
           }
 
           // console.log(ghostEl.x)
-        },
+        }
       });
 
       // baseTimeline.clear();
@@ -356,7 +356,7 @@
           options.transitionDuration,
           {
             alpha: 0,
-            ease: Power2.easeOut,
+            ease: Power2.easeOut
           },
           options.transitionDuration
         )
@@ -377,7 +377,7 @@
                 options.transitionDuration,
                 {
                   alpha: 1,
-                  ease: Power2.easeOut,
+                  ease: Power2.easeOut
                 },
                 options.transitionDuration
               );

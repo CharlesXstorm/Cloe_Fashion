@@ -11,7 +11,8 @@ const CatItem = ({ src, text, id }) => {
         flexDirection: { lg: "row" },
         gap: { lg: "40px", xs: "10px" },
         width: "100%",
-        margin: "auto"
+        margin: "auto",
+        marginTop: { lg: "60px" }
       }}
     >
       <Box
