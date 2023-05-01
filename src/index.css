@@ -22,12 +22,14 @@ code {
     monospace;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   background: transparent;
+
+  width: 0px;
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-track {
   border: none;
   outline: none;
-} */
+}

@@ -15,6 +15,15 @@ const CatData = [
       </>
     ),
     src: geleData[14]
+  },
+  {
+    id: "002",
+    text: (
+      <>
+        Hair Style <br /> Ideas
+      </>
+    ),
+    src: "https://images2.imgbox.com/35/71/5fsl1tFm_o.jpg"
   }
 ];
 
@@ -37,7 +46,7 @@ const HomeInfo = ({ setScroll, vHeight }) => {
         left: 0,
         zIndex: -1,
         width: "100%",
-        height: "150vh",
+        height: "auto",
         margin: "auto",
         overflow: "hidden",
         backgroundColor: "#000"

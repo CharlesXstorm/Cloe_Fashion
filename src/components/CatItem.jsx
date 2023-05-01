@@ -37,8 +37,9 @@ const CatItem = ({ src, text, id }) => {
         >
           <motion.div
             initial={{ y: 100 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1, delay: 6, ease: "easeInOut" }}
+            // animate={{ y: 0 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1, delay: 1, ease: "easeInOut" }}
             style={{
               zIndex: "2",
               position: "absolute",
@@ -77,9 +78,9 @@ const CatItem = ({ src, text, id }) => {
         </motion.div>
       </Box>
       <motion.div
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1, delay: 4, ease: "easeInOut" }}
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
         style={{ paddingTop: "50px", width: "auto" }}
       >
         <Typography
