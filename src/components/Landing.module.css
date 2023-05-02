@@ -10,3 +10,7 @@
   transform-origin: 0;
   /* transform: translateY(200); */
 }
+
+.div :hover > .link > .typo {
+  color: "#000";
+}

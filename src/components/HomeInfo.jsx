@@ -27,7 +27,7 @@ const CatData = [
   }
 ];
 
-const HomeInfo = ({ setScroll, vHeight }) => {
+const HomeInfo = () => {
   //   const { scrollYProgress } = useScroll();
 
   //   useMotionValueEvent(scrollYProgress, "change", (e) => {

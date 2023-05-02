@@ -42,7 +42,14 @@ const Home = ({ setBackDrop }) => {
         document.getElementById("loader")
       )}
 
-      <AnimatePresence>
+      <Landing
+        width={vWidth < 1024 ? "180%" : "100%"}
+        scale={vWidth > 1280 ? 1.3 : 1}
+        setIsExploring={setIsExploring}
+        setBackDrop={setBackDrop}
+      />
+
+      {/* <AnimatePresence>
         {!isExploring && (
           <Landing
             width={vWidth < 1024 ? "180%" : "100%"}
@@ -51,8 +58,8 @@ const Home = ({ setBackDrop }) => {
             setBackDrop={setBackDrop}
           />
         )}
-      </AnimatePresence>
-      {isExploring && <HomeInfo vHeight={vHeight} />}
+      </AnimatePresence> */}
+      {/* {isExploring && <HomeInfo vHeight={vHeight} />} */}
     </>
   );
 };

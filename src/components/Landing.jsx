@@ -2,6 +2,7 @@ import React from "react";
 import { Stack, Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import CloeBack from "./CloeBack";
+import { Link } from "react-router-dom";
 import style from "./Landing.module.css";
 
 const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
@@ -185,6 +186,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
         }}
       >
         <motion.div
+          className={style.div}
           whileHover={{
             backgroundColor: "#fff",
             color: "#000",
@@ -203,9 +205,20 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
             justifyContent: "center"
           }}
         >
-          <Typography fontFamily={"newyorkregular"} fontSize={"25px"}>
-            Explore
-          </Typography>
+          <Link
+            className={style.link}
+            to="/home"
+            // className={style.link}
+            style={{ textDecoration: "none", color: "#fff" }}
+          >
+            <Typography
+              className={style.typo}
+              fontFamily={"newyorkregular"}
+              fontSize={"25px"}
+            >
+              Explore
+            </Typography>
+          </Link>
         </motion.div>
       </Box>
       <motion.div
