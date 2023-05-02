@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import $ from "jquery";
 import { Box } from "@mui/material";
 import { motion } from "framer-motion";
@@ -6,28 +6,7 @@ import Catalogue from "./Catalogue";
 
 import style from "./HomeInfo.module.css";
 
-const CatData = [
-  {
-    id: 1,
-    text: (
-      <>
-        23 Gele Style <br /> Ideas
-      </>
-    ),
-    src: "./images/gele.jpg" /*geleData[14]*/
-  },
-  {
-    id: 2,
-    text: (
-      <>
-        Hair Style <br /> Ideas
-      </>
-    ),
-    src: "./images/hair.jpg" /*"https://images2.imgbox.com/35/71/5fsl1tFm_o.jpg"*/
-  }
-];
-
-const HomeInfo = () => {
+const HomeInfo = ({ catData }) => {
   //   const { scrollYProgress } = useScroll();
 
   //   useMotionValueEvent(scrollYProgress, "change", (e) => {
@@ -81,7 +60,7 @@ const HomeInfo = () => {
         }}
       ></motion.div>
       <Box mt={"140px"}>
-        <Catalogue data={CatData} />
+        <Catalogue data={catData} />
       </Box>
     </motion.div>
   );
