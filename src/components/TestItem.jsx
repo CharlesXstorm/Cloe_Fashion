@@ -19,7 +19,7 @@ const TestItem = ({ src, text, id, isEven }) => {
       }}
     >
       <Box width={"100%"} mt={"50px"} height={"625px"}>
-        <img src={gele} width="100%" alt="img" />
+        <img src={src} width="100%" alt="img" />
       </Box>
       {/* <Box
         className={style.cont}

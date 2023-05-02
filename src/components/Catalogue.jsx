@@ -1,6 +1,6 @@
 import React from "react";
 // import CatItem from "./CatItem";
-import CatItem from "./TestItem";
+import CatItem from "./CatItem";
 import { Box } from "@mui/material";
 
 const Catalogue = ({ data }) => {
