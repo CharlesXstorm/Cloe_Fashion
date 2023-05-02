@@ -7,7 +7,6 @@ const TestItem = ({ src, text, id, isEven }) => {
   console.log("rendering");
   return (
     <Stack
-      // direction={"row"}
       sx={{
         flexDirection: { lg: "row" },
         gap: { lg: "40px", xs: "10px" },
@@ -17,7 +16,10 @@ const TestItem = ({ src, text, id, isEven }) => {
         justifyContent: `${isEven ? "flex-end" : "flex-start"}`
       }}
     >
-      <Box
+      <Box width={"100%"} mt={"50px"} height={"625px"}>
+        <img src={src} width="100%" alt="img" />
+      </Box>
+      {/* <Box
         className={style.cont}
         sx={{
           position: "relative",
@@ -79,7 +81,7 @@ const TestItem = ({ src, text, id, isEven }) => {
             </motion.div>
           }
         </motion.div>
-      </Box>
+      </Box> */}
     </Stack>
   );
 };

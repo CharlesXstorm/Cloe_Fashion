@@ -207,7 +207,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
         >
           <Link
             className={style.link}
-            to="/home"
+            to="/explore"
             // className={style.link}
             style={{ textDecoration: "none", color: "#fff" }}
           >

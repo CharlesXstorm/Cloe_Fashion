@@ -20,7 +20,7 @@ function App() {
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
           <Route index element={<Home setBackDrop={setBackDrop} />} />
-          <Route path="/home" element={<Explore />} />
+          <Route path="/explore" element={<Explore />} />
           <Route path="/work" element={<Work />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
