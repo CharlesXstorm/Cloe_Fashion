@@ -21,9 +21,9 @@
     //  OPTIONS
 
     const images = [
-      "./images/Queenpix.png",
-      "./images/okay.png",
-      "./images/beauty.png"
+      "./images/slide2.jpg",
+      "./images/slide3.jpg",
+      "./images/slide1.jpg"
     ];
 
     ///////////////////////////////

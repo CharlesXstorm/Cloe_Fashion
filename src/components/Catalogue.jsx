@@ -6,7 +6,13 @@ const Catalogue = ({ data }) => {
   return (
     <Box sx={{ margin: { lg: "10em", xs: "0em" } }}>
       {data.map((item) => (
-        <CatItem key={item.id} id={item.id} src={item.src} text={item.text} />
+        <CatItem
+          key={item.id}
+          id={item.id}
+          src={item.src}
+          isEven={item.id % 2 === 0 ? true : false}
+          text={item.text}
+        />
       ))}
     </Box>
   );

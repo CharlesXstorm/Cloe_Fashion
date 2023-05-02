@@ -3,7 +3,7 @@ import { Stack, Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import style from "./CatItem.module.css";
 
-const CatItem = ({ src, text, id }) => {
+const CatItem = ({ src, text, id, isEven }) => {
   console.log("rendering");
   return (
     <Stack
@@ -13,9 +13,31 @@ const CatItem = ({ src, text, id }) => {
         gap: { lg: "40px", xs: "10px" },
         width: "100%",
         margin: "auto",
-        marginTop: { lg: "60px" }
+        marginTop: { lg: "60px" },
+        justifyContent: `${isEven ? "flex-end" : "flex-start"}`
       }}
     >
+      {isEven && (
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          style={{ paddingTop: "50px", width: "auto" }}
+        >
+          <Typography
+            sx={{
+              display: { lg: "block", xs: "none" },
+              textAlign: "center",
+              cursor: "pointer"
+            }}
+            fontFamily={"newyorkregular"}
+            fontSize={"50px"}
+          >
+            {text}
+          </Typography>
+        </motion.div>
+      )}
       <Box
         className={style.cont}
         sx={{
@@ -98,25 +120,27 @@ const CatItem = ({ src, text, id }) => {
           ></motion.div> */}
         </motion.div>
       </Box>
-      <motion.div
-        initial={{ y: 100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
-        viewport={{ once: true }}
-        style={{ paddingTop: "50px", width: "auto" }}
-      >
-        <Typography
-          sx={{
-            display: { lg: "block", xs: "none" },
-            textAlign: "center",
-            cursor: "pointer"
-          }}
-          fontFamily={"newyorkregular"}
-          fontSize={"50px"}
+      {!isEven && (
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          style={{ paddingTop: "50px", width: "auto" }}
         >
-          {text}
-        </Typography>
-      </motion.div>
+          <Typography
+            sx={{
+              display: { lg: "block", xs: "none" },
+              textAlign: "center",
+              cursor: "pointer"
+            }}
+            fontFamily={"newyorkregular"}
+            fontSize={"50px"}
+          >
+            {text}
+          </Typography>
+        </motion.div>
+      )}
     </Stack>
   );
 };

@@ -8,7 +8,7 @@ import style from "./HomeInfo.module.css";
 
 const CatData = [
   {
-    id: "001",
+    id: 1,
     text: (
       <>
         23 Gele Style <br /> Ideas
@@ -17,7 +17,7 @@ const CatData = [
     src: geleData[14]
   },
   {
-    id: "002",
+    id: 2,
     text: (
       <>
         Hair Style <br /> Ideas
