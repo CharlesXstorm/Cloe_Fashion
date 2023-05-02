@@ -2,6 +2,8 @@ import React from "react";
 import { Stack, Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import style from "./CatItem.module.css";
+import gele from "../assets/images/gele.jpg";
+import hair from "../assets/images/hair.jpg";
 
 const TestItem = ({ src, text, id, isEven }) => {
   console.log("rendering");
@@ -17,7 +19,7 @@ const TestItem = ({ src, text, id, isEven }) => {
       }}
     >
       <Box width={"100%"} mt={"50px"} height={"625px"}>
-        <img src={src} width="100%" alt="img" />
+        <img src={gele} width="100%" alt="img" />
       </Box>
       {/* <Box
         className={style.cont}
