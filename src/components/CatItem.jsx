@@ -73,7 +73,8 @@ const CatItem = ({ src, text, id }) => {
               className={style.gele}
               style={{
                 width: "100%",
-                height: "100%"
+                height: "625px",
+                overflow: "hidden"
                 // backgroundImage: `url(${src})`,
                 // backgroundPosition: "center",
                 // backgroundSize: "cover"

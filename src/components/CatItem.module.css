@@ -8,7 +8,7 @@
   height: 625px;
   clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
 }
-.cont:hover .gele::after {
+.cont:hover .gele::before {
   opacity: 0;
   transition: all 4s linear;
 }
@@ -18,7 +18,7 @@
   transition: all 4s linear;
 }
 
-.gele::after {
+.gele::before {
   content: "";
   position: absolute;
   /* z-index: 10; */

@@ -14,7 +14,7 @@ const CatData = [
         23 Gele Style <br /> Ideas
       </>
     ),
-    src: "../images/slide1.jpg" /*geleData[14]*/
+    src: geleData[14]
   },
   {
     id: "002",
@@ -23,7 +23,7 @@ const CatData = [
         Hair Style <br /> Ideas
       </>
     ),
-    src: "../images/slide2.jpg" /*"https://images2.imgbox.com/35/71/5fsl1tFm_o.jpg"*/
+    src: "https://images2.imgbox.com/35/71/5fsl1tFm_o.jpg"
   }
 ];
 
@@ -44,7 +44,7 @@ const HomeInfo = ({ setScroll, vHeight }) => {
         position: "absolute",
         top: 0,
         left: 0,
-        zIndex: 1,
+        // zIndex: 1,
         width: "100%",
         height: "auto",
         margin: "auto",
