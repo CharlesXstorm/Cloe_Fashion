@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 
-const LiquidSlider = ({ width, src }) => {
+const LiquidSlider = () => {
   useEffect(() => {
     window.rbgShiftSlider();
   }, []);

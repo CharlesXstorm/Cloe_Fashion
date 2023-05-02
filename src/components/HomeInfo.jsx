@@ -1,9 +1,9 @@
 import React from "react";
 // import $ from "jquery";
-import { Stack, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import { motion } from "framer-motion";
 import Catalogue from "./Catalogue";
-import { geleData } from "../utils/GeleData";
+
 import style from "./HomeInfo.module.css";
 
 const CatData = [
@@ -14,7 +14,7 @@ const CatData = [
         23 Gele Style <br /> Ideas
       </>
     ),
-    src: "./image/gele.jpg" /*geleData[14]*/
+    src: "./images/gele.jpg" /*geleData[14]*/
   },
   {
     id: 2,

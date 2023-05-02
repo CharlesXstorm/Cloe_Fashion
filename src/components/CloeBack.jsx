@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "./NavBar";
+
 import { Stack, Box, Typography } from "@mui/material";
-import queen from "../assets/images/Queen.png";
+
 import LiquidSlider from "./LiquidSlider";
-import { motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 const CloeBack = ({ width }) => {
   return (
@@ -24,7 +24,7 @@ const CloeBack = ({ width }) => {
         {
           //rgbkineticstarts
 
-          <LiquidSlider width={width} src={queen} />
+          <LiquidSlider />
 
           //rgbkineticends
         }
