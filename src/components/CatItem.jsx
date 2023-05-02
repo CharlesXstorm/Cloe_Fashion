@@ -65,7 +65,24 @@ const CatItem = ({ src, text, id }) => {
               {text}
             </Typography>
           </motion.div>
-          <motion.div
+          {
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5, delay: 2, ease: "easeInOut" }}
+              className={style.gele}
+              style={{
+                width: "100%",
+                height: "100%"
+                // backgroundImage: `url(${src})`,
+                // backgroundPosition: "center",
+                // backgroundSize: "cover"
+              }}
+            >
+              <img src={src} alt="img" width={"100%"} />
+            </motion.div>
+          }
+          {/* <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 2, ease: "easeInOut" }}
@@ -77,7 +94,7 @@ const CatItem = ({ src, text, id }) => {
               backgroundPosition: "center",
               backgroundSize: "cover"
             }}
-          ></motion.div>
+          ></motion.div> */}
         </motion.div>
       </Box>
       <motion.div
