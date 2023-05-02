@@ -1,12 +1,13 @@
 import React from "react";
-import CatItem from "./CatItem";
+// import CatItem from "./CatItem";
+import TestItem from "./TestItem";
 import { Box } from "@mui/material";
 
 const Catalogue = ({ data }) => {
   return (
     <Box sx={{ margin: { lg: "10em", xs: "0em" } }}>
       {data.map((item) => (
-        <CatItem
+        <TestItem
           key={item.id}
           id={item.id}
           src={item.src}
