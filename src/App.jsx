@@ -19,7 +19,7 @@ function App() {
       <NavBar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
-          <Route path="/" element={<Home setBackDrop={setBackDrop} />} />
+          <Route index element={<Home setBackDrop={setBackDrop} />} />
           <Route path="/home" element={<Explore />} />
           <Route path="/work" element={<Work />} />
           <Route path="/about" element={<About />} />
