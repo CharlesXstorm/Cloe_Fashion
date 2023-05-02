@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 
 const LiquidSlider = ({ width, src }) => {
-  useEffect(() => {
-    window.rbgShiftSlider();
-    // console.log(typeof window.rgbShiftSlider);
-  }, []);
+  // useEffect(() => {
+  //   window.rbgShiftSlider();
+
+  // }, []);
 
   return (
     <Box
@@ -16,7 +16,7 @@ const LiquidSlider = ({ width, src }) => {
         width: { lg: "60vw", xs: "100vw" },
         height: "100vh",
         // border: "2px solid green",
-        overflow: "hidden",
+        overflow: "hidden"
       }}
     >
       {/* <img width={width} src={src} alt="fashion" /> */}
@@ -24,7 +24,7 @@ const LiquidSlider = ({ width, src }) => {
         sx={{
           width: "100%",
           display: "block",
-          height: "100vh",
+          height: "100vh"
           // border: "2px solid red",
         }}
         id="rbgShiftSlider"
