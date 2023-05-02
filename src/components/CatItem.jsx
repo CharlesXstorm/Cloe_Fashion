@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import style from "./CatItem.module.css";
 
 const CatItem = ({ src, text, id }) => {
+  console.log("rendering");
   return (
     <Stack
       // direction={"row"}

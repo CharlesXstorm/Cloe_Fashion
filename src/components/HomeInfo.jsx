@@ -14,7 +14,7 @@ const CatData = [
         23 Gele Style <br /> Ideas
       </>
     ),
-    src: geleData[14]
+    src: "../images/beauty.png" /*geleData[14]*/
   },
   {
     id: "002",
@@ -23,7 +23,7 @@ const CatData = [
         Hair Style <br /> Ideas
       </>
     ),
-    src: "https://images2.imgbox.com/35/71/5fsl1tFm_o.jpg"
+    src: "../images/Queen.png" /*"https://images2.imgbox.com/35/71/5fsl1tFm_o.jpg"*/
   }
 ];
 
