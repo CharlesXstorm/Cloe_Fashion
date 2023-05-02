@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 
 const LiquidSlider = () => {
-  useEffect(() => {
-    window.rbgShiftSlider();
-  }, []);
+  // useEffect(() => {
+  //   window.rbgShiftSlider();
+  // }, []);
 
   return (
     <Box
