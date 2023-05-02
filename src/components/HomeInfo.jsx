@@ -44,7 +44,7 @@ const HomeInfo = ({ setScroll, vHeight }) => {
         position: "absolute",
         top: 0,
         left: 0,
-        zIndex: -1,
+        zIndex: 1,
         width: "100%",
         height: "auto",
         margin: "auto",
