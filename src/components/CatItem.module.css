@@ -25,7 +25,7 @@
   transition: transform 4s linear;
 }
 
-/* .before {
+.before {
   content: "";
   position: absolute;
   z-index: 2;
@@ -34,12 +34,13 @@
   width: 100%;
   height: 625px;
   opacity: 1;
+  background-color: orange;
 
-  backdrop-filter: grayscale(1);
+  /* backdrop-filter: grayscale(1);
   -webkit-backdrop-filter: grayscale(1);
-  -moz-backdrop-filter: grayscale(1);
+  -moz-backdrop-filter: grayscale(1); */
   transition: opacity 4s linear;
-} */
+}
 
 /* .gele::before {
   content: "";
