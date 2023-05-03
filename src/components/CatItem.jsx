@@ -102,7 +102,7 @@ const CatItem = ({ src, text, id, isEven }) => {
                 // backgroundSize: "cover"
               }}
             >
-              <img src={src} alt="img" width={"100%"} />
+              <img src={src} alt="img" width={"100%"} loading="lazy" />
             </motion.div>
           }
           {/* <motion.div
