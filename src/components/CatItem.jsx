@@ -87,6 +87,23 @@ const CatItem = ({ src, text, id, isEven }) => {
               {text}
             </Typography>
           </motion.div>
+
+          {
+            <div
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 1 }}
+              // transition={{ duration: 1.5, delay: 2, ease: "easeInOut" }}
+              className={style.before}
+              // style={{
+              //   width: "100%",
+              //   height: "625px",
+              //   overflow: "hidden"
+              // }}
+            >
+              {/* <img src={src} alt="img" width={"100%"} loading="lazy" /> */}
+            </div>
+          }
+
           {
             <motion.div
               initial={{ opacity: 0 }}
