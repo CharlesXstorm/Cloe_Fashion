@@ -16,9 +16,12 @@ const HomeInfo = ({ catData }) => {
   return (
     <motion.div
       className={style.clipPath}
-      initial={{ clipPath: "circle(0% at 50% 0%)" }}
-      animate={{ clipPath: "circle(120% at 50% 20%)", backgroundColor: "#fff" }}
-      transition={{ duration: 2, ease: "easeInOut" }} //delay: 4,
+      initial={{ clipPath: "circle(0% at 0% 0%)" }}
+      animate={{
+        clipPath: "circle(140% at 0% 0%)",
+        backgroundColor: "#242424"
+      }}
+      transition={{ duration: 1.2, ease: "easeInOut" }} //delay: 4,
       style={{
         position: "absolute",
         top: 0,
@@ -46,9 +49,9 @@ const HomeInfo = ({ catData }) => {
         //clipPathends
       }
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 4, ease: "linear" }} //delay: 4,
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // transition={{ duration: 4, ease: "linear" }} //delay: 4,
         // mb={"1em"}
         // bgcolor={"#000"}
         style={{

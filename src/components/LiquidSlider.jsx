@@ -3,7 +3,10 @@ import { Box } from "@mui/material";
 
 const LiquidSlider = () => {
   // useEffect(() => {
-  //   window.rbgShiftSlider();
+  //   const rbgShiftSlider = window.rbgShiftSlider();
+  //   requestAnimationFrame(rbgShiftSlider());
+
+  //   cancelAnimationFrame(rbgShiftSlider());
   // }, []);
 
   return (

@@ -29,7 +29,8 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
             sx={{
               display: { lg: "block", xs: "none" },
               textAlign: "center",
-              cursor: "pointer"
+              cursor: "pointer",
+              color: "#fff"
             }}
             fontFamily={"newyorkregular"}
             fontSize={"50px"}
@@ -49,7 +50,7 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
       >
         <motion.div
           className={style.clipImg}
-          initial={{ clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)" }}
+          initial={{ clipPath: "polygon(30% 0, 70% 0, 70% 100%, 30% 100%)" }}
           animate={{ clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0% 100%)" }}
           transition={{
             // type: "spring",
@@ -138,7 +139,8 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
             sx={{
               display: { lg: "block", xs: "none" },
               textAlign: "center",
-              cursor: "pointer"
+              cursor: "pointer",
+              color: "#fff"
             }}
             fontFamily={"newyorkregular"}
             fontSize={"50px"}

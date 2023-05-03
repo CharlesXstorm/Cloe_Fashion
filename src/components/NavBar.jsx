@@ -85,9 +85,9 @@ const NavBar = () => {
     >
       <Stack alignSelf={"center"}>
         <motion.svg
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 2, delay: 8, ease: "easeInOut" }}
+          // initial={{ opacity: 0 }}
+          // animate={{ opacity: 1 }}
+          // transition={{ duration: 2, delay: 8, ease: "easeInOut" }}
           style={{ transform: "scale(0.8)" }}
           width="162"
           height="86"
