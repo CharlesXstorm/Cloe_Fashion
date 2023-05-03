@@ -2,7 +2,6 @@
   transform: scale(1.1);
   transition: transform 4s linear;
   cursor: pointer;
-  will-change: transform;
 }
 
 /* .cont:hover .gele::before {
@@ -13,7 +12,6 @@
 .cont:hover .before {
   opacity: 0;
   transition: opacity 4s linear;
-  will-change: opacity;
 }
 
 .clipImg {
@@ -25,7 +23,6 @@
 .gele {
   transform: scale(1);
   transition: transform 4s linear;
-  will-change: transform;
 }
 
 .before {
@@ -45,7 +42,6 @@
   -webkit-backdrop-filter: grayscale(1);
   -moz-backdrop-filter: grayscale(1);
   transition: opacity 4s linear;
-  will-change: opacity;
 }
 
 /* .gele::before {
