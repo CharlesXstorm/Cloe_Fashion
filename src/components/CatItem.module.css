@@ -25,15 +25,12 @@
   transition: transform 4s linear;
 }
 
-.before {
+/* .before {
   content: "";
   position: absolute;
   z-index: 2;
   top: 0px;
   left: 0px;
-
-  /* border: 2px solid red;
-  background-color: orange; */
   width: 100%;
   height: 625px;
   opacity: 1;
@@ -42,7 +39,7 @@
   -webkit-backdrop-filter: grayscale(1);
   -moz-backdrop-filter: grayscale(1);
   transition: opacity 4s linear;
-}
+} */
 
 /* .gele::before {
   content: "";

@@ -89,7 +89,24 @@ const CatItem = ({ src, text, id, isEven }) => {
             </Typography>
           </motion.div>
 
-          <div className={style.before}></div>
+          <div
+            // className={style.before}
+            style={{
+              content: "",
+              position: "absolute",
+              zIndex: 2,
+              top: "0px",
+              left: "0px",
+              width: "100%",
+              height: "625px",
+              opacity: 1,
+
+              backdropFilter: "grayscale(1)",
+              // -webkit-backdropFilter: "grayscale(1)",
+              // -moz-backdropFilter: "grayscale(1)",
+              transition: "opacity 4s linear"
+            }}
+          ></div>
 
           {
             <motion.div
