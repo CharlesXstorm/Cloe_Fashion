@@ -4,10 +4,10 @@
   cursor: pointer;
 }
 
-/* .cont:hover .gele::before {
+.cont:hover .gele::before {
   opacity: 0;
   transition: opacity 4s linear;
-} */
+}
 
 .clipImg {
   width: 100%;
@@ -21,7 +21,7 @@
   will-change: transform;
 }
 
-/* .gele::before {
+.gele::before {
   content: "";
   position: absolute;
 
@@ -33,4 +33,4 @@
   -webkit-backdrop-filter: grayscale(1);
   -moz-backdrop-filter: grayscale(1);
   transition: opacity 4s linear;
-} */
+}
