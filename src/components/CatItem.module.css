@@ -1,13 +1,13 @@
-/* .cont:hover .gele {
+.cont:hover .gele {
   transform: scale(1.1);
   transition: transform 4s linear;
   cursor: pointer;
 }
 
-.cont:hover .gele::before {
+/* .cont:hover .gele::before {
   opacity: 0;
   transition: opacity 4s linear;
-}
+} */
 
 .clipImg {
   width: 100%;
@@ -21,7 +21,7 @@
   will-change: transform;
 }
 
-.gele::before {
+/* .gele::before {
   content: "";
   position: absolute;
 
