@@ -3,7 +3,7 @@ import { Stack, Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import style from "./CatItem.module.css";
 
-const CatItem = ({ src, text, id, isEven }) => {
+const CatItem = ({ src, srcbw, text, id, isEven }) => {
   console.log("rendering");
   return (
     <Stack
@@ -44,7 +44,8 @@ const CatItem = ({ src, text, id, isEven }) => {
           position: "relative",
           width: { lg: "500px", xs: "100%" },
           height: "625px",
-          overflow: "hidden"
+          overflow: "hidden",
+          border: "2px solid red"
         }}
       >
         <motion.div
@@ -58,7 +59,7 @@ const CatItem = ({ src, text, id, isEven }) => {
             delay: 5.8,
             ease: "easeInOut"
           }}
-          style={{ position: "inherit" }}
+          style={{ position: "inherit", overflow: "hidden", height: "inherit" }}
         >
           <motion.div
             initial={{ y: 100, opacity: 0 }}
@@ -89,23 +90,9 @@ const CatItem = ({ src, text, id, isEven }) => {
             </Typography>
           </motion.div>
 
-          <div
-            className={style.before}
-            // style={{
-            //   content: "",
-            //   position: "absolute",
-            //   zIndex: 2,
-            //   top: "0px",
-            //   left: "0px",
-            //   width: "100%",
-            //   height: "625px",
-            //   opacity: 1,
-
-            //   backdropFilter: "grayscale(1)",
-
-            //   transition: "opacity 4s linear"
-            // }}
-          ></div>
+          <div className={style.before}>
+            <img src={srcbw} alt="img" width={"110%"} loading="lazy" />
+          </div>
 
           {
             <motion.div
@@ -122,7 +109,7 @@ const CatItem = ({ src, text, id, isEven }) => {
                 // backgroundSize: "cover"
               }}
             >
-              <img src={src} alt="img" width={"100%"} loading="lazy" />
+              <img src={src} alt="img" width={"110%"} loading="lazy" />
             </motion.div>
           }
           {/* <motion.div

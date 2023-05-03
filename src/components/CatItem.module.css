@@ -28,13 +28,13 @@
 .before {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 625px;
   opacity: 1;
-  background-color: orange;
+  /* background-color: orange; */
 
   /* backdrop-filter: grayscale(1);
   -webkit-backdrop-filter: grayscale(1);

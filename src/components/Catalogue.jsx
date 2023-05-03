@@ -11,6 +11,7 @@ const Catalogue = ({ data }) => {
           key={item.id}
           id={item.id}
           src={item.src}
+          srcbw={item.srcbw}
           isEven={item.id % 2 === 0 ? true : false}
           text={item.text}
         />
