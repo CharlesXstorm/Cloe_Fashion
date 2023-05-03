@@ -55,7 +55,7 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
             // type: "spring",
             // stiffness: 400,
             duration: 1.5,
-            delay: 5.8,
+            delay: 2, //delay: 5.8,
             ease: "easeInOut"
           }}
           style={{ position: "inherit", overflow: "hidden", height: "inherit" }}
