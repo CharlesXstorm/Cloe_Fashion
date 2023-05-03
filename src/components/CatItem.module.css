@@ -2,6 +2,7 @@
   transform: scale(1.1);
   transition: transform 4s linear;
   cursor: pointer;
+  will-change: transform;
 }
 
 /* .cont:hover .gele::before {
@@ -12,6 +13,7 @@
 .cont:hover .before {
   opacity: 0;
   transition: opacity 4s linear;
+  will-change: opacity;
 }
 
 .clipImg {
@@ -29,7 +31,7 @@
 .before {
   content: "";
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   top: 0px;
   left: 0px;
 
