@@ -4,9 +4,6 @@ import { Box } from "@mui/material";
 const LiquidSlider = () => {
   useEffect(() => {
     window.rbgShiftSlider();
-    // requestAnimationFrame(window.rbgShiftSlider());
-
-    // cancelAnimationFrame(window.rbgShiftSlider());
   }, []);
 
   return (

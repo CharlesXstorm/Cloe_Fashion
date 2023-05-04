@@ -65,6 +65,12 @@ const HomeInfo = ({ catData }) => {
       <Box mt={"140px"}>
         <Catalogue data={catData} />
       </Box>
+      <motion.div
+        className={style.circleTrans}
+        initial={{ originX: 0 }}
+        exit={{ scale: 3000, top: 10, originX: 0 }}
+        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
+      ></motion.div>
     </motion.div>
   );
 };

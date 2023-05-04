@@ -41,7 +41,8 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
           enableBackground={`new 0 0 1280 812`}
           style={{
             transform: `scale(${scale})`,
-            transformOrigin: "0"
+            transformOrigin: "0",
+            fill: "orange"
           }}
         >
           <g>
@@ -203,8 +204,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
             padding: "1em",
             borderRadius: "10px",
             border: "2px solid #fff",
-            justifyContent: "center",
-            color: "#fff"
+            justifyContent: "center"
           }}
         >
           <Link

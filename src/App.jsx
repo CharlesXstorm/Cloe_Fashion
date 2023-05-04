@@ -10,10 +10,14 @@ import Contact from "./pages/Contact";
 
 import { AnimatePresence } from "framer-motion";
 import Explore from "./pages/Explore";
+import Gele from "./pages/Gele";
+import Hair from "./pages/Hair";
+import { geleData } from "./utils/GeleData";
 
 function App() {
   const location = useLocation();
   const [backdrop, setBackDrop] = useState("#000");
+  const [data, setData] = useState([...geleData]);
   return (
     <Box bgcolor={backdrop} m="auto" width={"100%"}>
       <NavBar />
@@ -21,6 +25,8 @@ function App() {
         <Routes location={location} key={location.key}>
           <Route index element={<Home setBackDrop={setBackDrop} />} />
           <Route path="/explore" element={<Explore />} />
+          <Route path="/explore/gele" element={<Gele data={data} />} />
+          <Route path="/explore/hair" element={<Hair />} />
           <Route path="/work" element={<Work />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
