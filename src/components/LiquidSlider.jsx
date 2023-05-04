@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 
 const LiquidSlider = () => {
-  // useEffect(() => {
-  //   const rbgShiftSlider = window.rbgShiftSlider();
-  //   requestAnimationFrame(rbgShiftSlider());
+  useEffect(() => {
+    window.rbgShiftSlider();
+    // requestAnimationFrame(window.rbgShiftSlider());
 
-  //   cancelAnimationFrame(rbgShiftSlider());
-  // }, []);
+    // cancelAnimationFrame(window.rbgShiftSlider());
+  }, []);
 
   return (
     <Box
@@ -32,14 +32,6 @@ const LiquidSlider = () => {
         id="rbgShiftSlider"
         className="rbgShiftSlider"
       ></Box>
-      {/* <nav>
-        <a href="#1" className="scene-nav prev" data-nav="previous">
-          Prev <span></span>
-        </a>
-        <a href="#2" className="scene-nav next" data-nav="next">
-          Next <span></span>
-        </a>
-      </nav> */}
     </Box>
   );
 };

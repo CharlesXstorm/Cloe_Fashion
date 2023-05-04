@@ -10,7 +10,14 @@
   transform-origin: 0;
   /* transform: translateY(200); */
 }
+.typo {
+  color: #fff;
+}
 
-.div :hover > .link > .typo {
-  color: "#000";
+.div:hover .typo {
+  color: #000;
+}
+
+.div:visited .typo {
+  color: #fff;
 }

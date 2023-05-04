@@ -174,6 +174,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
         </svg>
       </Box>
       <Box
+        className={style.box}
         sx={{
           position: "absolute",
           zIndex: 1,
@@ -202,14 +203,15 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
             padding: "1em",
             borderRadius: "10px",
             border: "2px solid #fff",
-            justifyContent: "center"
+            justifyContent: "center",
+            color: "#fff"
           }}
         >
           <Link
             className={style.link}
             to="/explore"
             // className={style.link}
-            style={{ textDecoration: "none", color: "#fff" }}
+            style={{ textDecoration: "none" }}
           >
             <Typography
               className={style.typo}
