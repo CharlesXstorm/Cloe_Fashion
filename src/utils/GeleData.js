@@ -1,4 +1,4 @@
-export const geleData = [
+const geleData = [
   "https://images2.imgbox.com/95/dc/ijWXfhNa_o.jpg",
   "https://images2.imgbox.com/25/e2/fFNI72TG_o.jpg",
   "https://images2.imgbox.com/c9/d5/4tFWya9f_o.jpg",
@@ -23,3 +23,34 @@ export const geleData = [
   "https://images2.imgbox.com/e0/8c/aGw0nFLt_o.jpg",
   "https://images2.imgbox.com/f0/38/VkVCSHA0_o.jpg"
 ];
+
+const gelebw = [
+  "https://images2.imgbox.com/49/93/8UJgbtCB_o.jpg",
+  "https://images2.imgbox.com/2e/bd/tWEElsyX_o.jpg",
+  "https://images2.imgbox.com/ba/6f/aKoPwFMM_o.jpg",
+  "https://images2.imgbox.com/47/5e/8c4d97GU_o.jpg",
+  "https://images2.imgbox.com/7b/13/usq3e9Dj_o.jpg",
+  "https://images2.imgbox.com/d8/d0/VLlQjYXh_o.jpg",
+  "https://images2.imgbox.com/ee/62/DMWvkL6u_o.jpg",
+  "https://images2.imgbox.com/78/b2/CHrNT1wd_o.jpg",
+  "https://images2.imgbox.com/f3/17/jsTxvUkL_o.jpg",
+  "https://images2.imgbox.com/7e/55/CsvvllYU_o.jpg",
+  "https://images2.imgbox.com/14/bd/VNAv1dsH_o.jpg",
+  "https://images2.imgbox.com/2b/e3/Z1lXhNs2_o.jpg",
+  "https://images2.imgbox.com/84/d3/tZebkvsa_o.jpg",
+  "https://images2.imgbox.com/d1/eb/A3zb7wkh_o.jpg",
+  "https://images2.imgbox.com/38/e9/rm2HTdX7_o.jpg",
+  "https://images2.imgbox.com/e0/5f/boiNGJ3k_o.jpg",
+  "https://images2.imgbox.com/82/01/am1g2NA4_o.jpg",
+  "https://images2.imgbox.com/d3/e7/Nmmjdl9u_o.jpg",
+  "https://images2.imgbox.com/90/4b/H3AKU0ZQ_o.jpg",
+  "https://images2.imgbox.com/45/8b/ZONfwhjD_o.jpg",
+  "https://images2.imgbox.com/9c/e8/l3mcxfXm_o.jpg",
+  "https://images2.imgbox.com/c9/05/MOVDBvo0_o.jpg",
+  "https://images2.imgbox.com/fb/c8/7FvmCfaz_o.jpg"
+];
+
+export const dataObj = [...geleData].map((item, index) => ({
+  src: item,
+  srcbw: gelebw[index]
+}));

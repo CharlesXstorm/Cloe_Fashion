@@ -25,7 +25,8 @@ const GeleStack = ({ data, loading, dvWidth }) => {
           index={index}
           loading={loading}
           key={index}
-          src={item}
+          src={item.src}
+          srcbw={item.srcbw}
         />
       ))}
     </Stack>

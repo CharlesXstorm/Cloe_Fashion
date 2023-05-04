@@ -12,12 +12,15 @@ import { AnimatePresence } from "framer-motion";
 import Explore from "./pages/Explore";
 import Gele from "./pages/Gele";
 import Hair from "./pages/Hair";
-import { geleData } from "./utils/GeleData";
+import { dataObj } from "./utils/GeleData";
+// import { geleData } from "./utils/GeleData";
 
 function App() {
   const location = useLocation();
   const [backdrop, setBackDrop] = useState("#000");
-  const [data, setData] = useState([...geleData]);
+  const [data, setData] = useState([...dataObj]);
+
+  // console.log(data);
   return (
     <Box bgcolor={backdrop} m="auto" width={"100%"}>
       <NavBar />

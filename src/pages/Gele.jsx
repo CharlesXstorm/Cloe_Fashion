@@ -24,7 +24,7 @@ const Gele = ({ data }) => {
       className={style.clipPath}
       initial={{ clipPath: "circle(0% at 0% 0%)" }}
       animate={{
-        clipPath: "circle(140% at 0% 0%)",
+        clipPath: "circle(250% at 0% 0%)",
         // backgroundColor: "#fff"
         backgroundColor: "#242424"
       }}
