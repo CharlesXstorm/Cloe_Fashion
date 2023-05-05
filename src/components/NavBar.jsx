@@ -74,6 +74,7 @@ const NavBar = ({ fill }) => {
 
   const clickHandler = () => {
     setClicked((prev) => !prev);
+    setNavClicked(true);
   };
   return (
     <Stack
