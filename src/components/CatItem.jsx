@@ -108,7 +108,12 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
               </Typography>
             </motion.div>
 
-            <div className={style.before}>
+            <motion.div
+              className={style.before}
+              // initial={{ opacity: 0 }}
+              // animate={{ opacity: 1 }}
+              // transition={{ duration: 1.5, delay: 2, ease: "easeInOut" }}
+            >
               {/* <Link
                 to="/gele"
                 style={{
@@ -121,13 +126,12 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
               > */}
               <img src={srcbw} alt="img" width={"110%"} loading="lazy" />
               {/* </Link> */}
-            </div>
+            </motion.div>
 
             {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                // exit={{ transition: { delay: 1 } }}
                 transition={{ duration: 1.5, delay: 2, ease: "easeInOut" }}
                 className={style.gele}
                 style={{

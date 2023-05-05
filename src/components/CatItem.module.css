@@ -37,6 +37,9 @@
 
   transition: opacity 4s linear;
 }
+/* .div {
+  opacity: 1;
+} */
 
 /* .gele::before {
   content: "";
