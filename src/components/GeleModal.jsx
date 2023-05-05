@@ -68,7 +68,9 @@ const GeleModal = ({ src, srcbw, loading, index, dvWidth }) => {
             position: "relative",
             width: { lg: "500px", xs: "100%" },
             height: "625px",
-            overflow: "hidden"
+            overflow: "hidden",
+            borderLeft: `${dvWidth < 800 ? "2px solid orange" : ""}`,
+            borderRight: `${dvWidth < 800 ? "2px solid orange" : ""}`
           }}
         >
           {loading === true ? (

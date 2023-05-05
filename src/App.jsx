@@ -17,16 +17,16 @@ import { dataObj } from "./utils/GeleData";
 
 function App() {
   const location = useLocation();
-  const [backdrop, setBackDrop] = useState("#000");
+  const [fill, setFill] = useState("#fff");
   const [data, setData] = useState([...dataObj]);
 
   // console.log(data);
   return (
-    <Box bgcolor={backdrop} m="auto" width={"100%"}>
-      <NavBar />
+    <Box bgcolor={"#fff"} m="auto" width={"100%"}>
+      <NavBar fill={fill} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
-          <Route index element={<Home setBackDrop={setBackDrop} />} />
+          <Route index element={<Home fill={fill} setFill={setFill} />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/explore/gele" element={<Gele data={data} />} />
           <Route path="/explore/hair" element={<Hair />} />

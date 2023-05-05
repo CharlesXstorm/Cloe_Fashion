@@ -57,7 +57,9 @@ const CatItem = ({ src, srcbw, text, id, isEven }) => {
             position: "relative",
             width: { lg: "500px", xs: "100%" },
             height: "625px",
-            overflow: "hidden"
+            overflow: "hidden",
+            borderLeft: "2px solid orange",
+            borderRight: "2px solid orange"
           }}
         >
           <motion.div

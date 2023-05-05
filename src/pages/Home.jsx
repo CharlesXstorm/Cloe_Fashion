@@ -4,14 +4,14 @@ import ReactDOM from "react-dom";
 import LoaderHome from "../components/LoaderHome";
 import Landing from "../components/Landing";
 
-import HomeInfo from "../components/HomeInfo";
-import { AnimatePresence } from "framer-motion";
+// import HomeInfo from "../components/HomeInfo";
+// import { AnimatePresence } from "framer-motion";
 
-const Home = ({ setBackDrop }) => {
+const Home = ({ setFill, fill }) => {
   const [hasLoaded, setHasLoaded] = useState(true);
   const [vWidth, setVwidths] = useState(1280);
-  const [isExploring, setIsExploring] = useState(false);
-  const [vHeight, setVheight] = useState(0);
+  // const [isExploring, setIsExploring] = useState(false);
+  // const [vHeight, setVheight] = useState(0);
 
   // const [hasLanded, setHasLanded] = useState(!false);
 
@@ -37,7 +37,7 @@ const Home = ({ setBackDrop }) => {
           hasLoaded={hasLoaded}
           setHasLoaded={setHasLoaded}
           vWidth={vWidth}
-          setVheight={setVheight}
+          // setVheight={setVheight}
         />,
         document.getElementById("loader")
       )}
@@ -45,8 +45,9 @@ const Home = ({ setBackDrop }) => {
       <Landing
         width={vWidth < 1024 ? "180%" : "100%"}
         scale={vWidth > 1280 ? 1.3 : 1}
-        setIsExploring={setIsExploring}
-        setBackDrop={setBackDrop}
+        // setIsExploring={setIsExploring}
+        setFill={setFill}
+        fill={fill}
       />
 
       {/* <AnimatePresence>

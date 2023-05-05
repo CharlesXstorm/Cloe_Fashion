@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Stack, Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import CloeBack from "./CloeBack";
 import { Link } from "react-router-dom";
 import style from "./Landing.module.css";
 
-const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
-  // console.log(scale);
+const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
+  const [stroke, setStroke] = useState("#fff");
+
+  // console.log(fill);
   return (
     <Stack
       position="fixed"
@@ -41,8 +43,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
           enableBackground={`new 0 0 1280 812`}
           style={{
             transform: `scale(${scale})`,
-            transformOrigin: "0",
-            fill: "orange"
+            transformOrigin: "0"
           }}
         >
           <g>
@@ -59,7 +60,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
-              stroke="#FFFFFF"
+              stroke={stroke}
               strokeWidth="2"
               strokeMiterlimit="10"
               d="
@@ -108,7 +109,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
-              stroke="#FFFFFF"
+              stroke={stroke}
               strokeWidth="2"
               strokeMiterlimit="10"
               d="
@@ -130,7 +131,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
-              stroke="#FFFFFF"
+              stroke={stroke}
               strokeWidth="2"
               strokeMiterlimit="10"
               d="
@@ -156,7 +157,7 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
               fillRule="evenodd"
               clipRule="evenodd"
               fill="none"
-              stroke="#FFFFFF"
+              stroke={stroke}
               strokeWidth="2"
               strokeMiterlimit="10"
               d="
@@ -183,15 +184,18 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
           left: { lg: "15em", xs: "4em" }
         }}
         onClick={() => {
-          setIsExploring(true);
-          setBackDrop("#fff");
+          // setIsExploring(true);
+          setFill("orange");
+          setStroke("orange");
         }}
       >
         <motion.div
           className={style.div}
           whileHover={{
-            backgroundColor: "#fff",
+            // backgroundColor: "#000",
+
             color: "#000",
+            border: "2px solid orange",
             scale: 1.1,
             cursor: "pointer",
             transition: {
@@ -204,7 +208,9 @@ const Landing = ({ width, scale, setIsExploring, setBackDrop }) => {
             padding: "1em",
             borderRadius: "10px",
             border: "2px solid #fff",
-            justifyContent: "center"
+            justifyContent: "center",
+            backdropFilter: "blur(12px)"
+            // backgroundColor: `${stroke === "#fff" ? "transparent" : stroke}`
           }}
         >
           <Link
