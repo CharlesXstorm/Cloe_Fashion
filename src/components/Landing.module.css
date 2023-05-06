@@ -15,7 +15,7 @@
 }
 
 .div:hover .typo {
-  color: orange;
+  color: #fff;
 }
 
 .div:visited .link {

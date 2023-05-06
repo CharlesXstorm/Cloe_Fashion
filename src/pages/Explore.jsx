@@ -6,7 +6,7 @@ const catData = [
     id: 1,
     text: (
       <>
-        23 Gele Style <br /> Ideas
+        Gele Style <br /> Ideas
       </>
     ),
     src: "./images/gele.jpg" /*geleData[14]*/,

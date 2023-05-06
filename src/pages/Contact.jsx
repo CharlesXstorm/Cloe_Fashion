@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   Box,
   Stack,
@@ -10,14 +10,12 @@ import {
   Button
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import style from "../components/HomeInfo.module.css";
+import hoverstyle from "../components/NavBar.module.css";
+import transit from "../components/HomeInfo.module.css";
 
 const services = [
-  {
-    value: "Log",
-    label: "Logistics"
-  },
   {
     value: "Con",
     label: "Consulting"
@@ -29,6 +27,10 @@ const services = [
   {
     value: "Src",
     label: "Sourcing"
+  },
+  {
+    value: "Log",
+    label: "Logistics"
   }
 ];
 
@@ -65,23 +67,65 @@ const CssTextField = styled(TextField)({
 
 const Contact = () => {
   const [loading, setLoading] = useState(true);
-  // const [dvWidth, setdvWidth] = useState(800);
+  const [name, setName] = useState("");
+  const [mail, setMail] = useState("");
+  const [serv, setServ] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [messages, setMessage] = useState("");
+  const [errorColor, setErrorColor] = useState("#fff");
+
+  // const mailRef = useRef(null);
 
   useEffect(() => {
     const timeOut = setTimeout(() => {
       setLoading(false);
     }, [4000]);
 
-    // setdvWidth(window.innerWidth);
+    // setMail(mailRef.current.target);
 
     return () => {
       clearTimeout(timeOut);
     };
   }, []);
 
-  const onChangeHandler = (e) => {
-    alert(e.target.value);
+  const onNameChangeHandler = (e) => {
+    setName(e.target.value);
   };
+  const onMailChangeHandler = (e) => {
+    setMail(e.target.value);
+  };
+  const servChange = (e) => {
+    setServ(e.target.value);
+  };
+
+  const submit = () => {
+    // console.log(mail);
+    if (
+      mail.trim() === "" ||
+      name.trim() === "" ||
+      !mail.trim().includes("@")
+    ) {
+      setMessage(
+        "Please check if name is incuded or email is written properly with the '@' symbol"
+      );
+      setErrorColor("#fff");
+      setIsSubmitted(true);
+      // console.log(
+
+      // );
+    } else {
+      setMessage(
+        <>
+          Hi {name}, thank you for requesting a call.
+          <br /> We'll reach out to you shortly.
+        </>
+      );
+      setErrorColor("orange");
+      setIsSubmitted(true);
+    }
+  };
+
+  // console.log(name);
 
   return (
     <motion.div
@@ -151,10 +195,10 @@ const Contact = () => {
                 Request A Call
               </Typography>
               <FormControl
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert("submited!!");
-                }}
+                // onSubmit={(e) => {
+                //   e.preventDefault();
+                //   alert("submited!!");
+                // }}
                 // component={"form"}
                 className={style.form}
                 method="post"
@@ -162,7 +206,8 @@ const Contact = () => {
                 sx={{
                   width: { lg: "600px", xs: "100%" },
                   marginTop: "20px",
-                  marginBottom: "50px"
+                  marginBottom: "50px",
+                  zIndex: "0"
                   // border: "2px solid blue"
                 }}
               >
@@ -174,9 +219,10 @@ const Contact = () => {
                   // type="password"
                   // value={"pascal"}
                   // focused={true}
-                  onChange={onChangeHandler}
+                  onChange={onNameChangeHandler}
                 />
                 <CssTextField
+                  onChange={onMailChangeHandler}
                   required
                   sx={{ marginBottom: "20px" }}
                   label="Email"
@@ -188,9 +234,11 @@ const Contact = () => {
                   id="Phone Number"
                 />
                 <CssTextField
+                  onChange={servChange}
                   select
                   sx={{ marginBottom: "20px" }}
                   label="Service Required"
+                  value={serv}
                   id="service"
                 >
                   {services.map((option) => (
@@ -200,9 +248,7 @@ const Contact = () => {
                   ))}
                 </CssTextField>
                 <Button
-                  // onClick={(e) => {
-                  //   alert("submited!!");
-                  // }}
+                  onClick={submit}
                   type="submit"
                   variant="outlined"
                   className={style.btn}
@@ -242,19 +288,116 @@ const Contact = () => {
                 >
                   Cloe has 15 company offices internationally, with dedicated
                   team members ready to support your needs, globally.
+                  {/* <br />
+                  Click here to view the addresses */}
                   <br />
-                  Click here to view the addresses
                   <br />
-                  <br />
-                  enquire@cloe.info
-                  <br />
-                  +123456789
                 </Typography>
+                <Box
+                  className={hoverstyle.link}
+                  style={{
+                    // border: "2px solid red",
+                    width: "140px",
+                    cursor: "pointer"
+                  }}
+                  // href="#1"
+                >
+                  <Typography
+                    data-text="enquire@cloe.info"
+                    className={hoverstyle.hover}
+                  >
+                    enquire@cloe.info
+                  </Typography>
+                </Box>
+                <Box
+                  mt={"20px"}
+                  className={hoverstyle.link}
+                  style={{
+                    // border: "2px solid red",
+                    width: "140px",
+                    cursor: "pointer"
+                  }}
+                  // href="#1"
+                >
+                  <Typography
+                    data-text="+123456789"
+                    className={hoverstyle.hover}
+                  >
+                    +123456789
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Stack>
         }
       </Box>
+
+      <AnimatePresence>
+        {
+          //error modal starts
+          isSubmitted && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              style={{
+                zIndex: "5",
+                position: "fixed",
+                top: "0px",
+                left: "0px",
+                right: "0px",
+                bottom: "0px",
+                width: "100vw",
+                height: "100vh",
+                margin: "auto",
+                padding: "10px",
+                backgroundColor: "rgba(0,0,0,0.7)"
+              }}
+            >
+              <Box
+                sx={{
+                  // zIndex: "4",
+                  position: "fixed",
+                  top: 420,
+                  left: { lg: "20%", xs: "0px" },
+                  width: { lg: "60%", xs: "100%" },
+                  height: "200px",
+                  margin: "auto",
+                  padding: "0px 10px",
+                  backgroundColor: `${errorColor}`
+                }}
+              >
+                <Stack
+                  p="20px"
+                  sx={{
+                    flexDirection: "row",
+                    justifyContent: "flex-end",
+                    color: "#fff",
+                    backgroundColor: "#000",
+                    borderRadius: "0px 0px 8px 8px"
+                  }}
+                >
+                  <span
+                    onClick={() => setIsSubmitted(false)}
+                    style={{ cursor: "pointer" }}
+                    className="material-symbols-outlined"
+                  >
+                    close
+                  </span>
+                </Stack>
+                <Typography
+                  fontSize={"20px"}
+                  mt="25px"
+                  sx={{ textAlign: "center" }}
+                >
+                  {messages}
+                </Typography>
+              </Box>
+            </motion.div>
+          ) //error modal ends
+        }
+      </AnimatePresence>
+
       {
         //backdropstart
         <motion.div
@@ -262,7 +405,7 @@ const Contact = () => {
             marginBottom: "1em",
             backgroundColor: "#242424",
             position: "fixed",
-            zIndex: "-1",
+            zIndex: "-2",
             left: "0px",
             top: "0px",
             bottom: "0px",
@@ -274,6 +417,13 @@ const Contact = () => {
         ></motion.div>
         //backdropends
       }
+
+      <motion.div
+        className={transit.circleTrans}
+        initial={{ originX: 0 }}
+        exit={{ scale: 3000, top: 10, originX: 0 }}
+        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
+      ></motion.div>
     </motion.div>
   );
 };

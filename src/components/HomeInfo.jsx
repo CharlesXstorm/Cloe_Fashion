@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import $ from "jquery";
 import { Box } from "@mui/material";
 import { motion } from "framer-motion";
@@ -7,11 +7,11 @@ import Catalogue from "./Catalogue";
 import style from "./HomeInfo.module.css";
 
 const HomeInfo = ({ catData }) => {
-  //   const { scrollYProgress } = useScroll();
+  const [dvWidth, setDvWidth] = useState(1000);
 
-  //   useMotionValueEvent(scrollYProgress, "change", (e) => {
-  //     setScroll(e > 0.1 ? false : true);
-  //   });
+  useEffect(() => {
+    setDvWidth(window.innerWidth);
+  }, []);
 
   return (
     <motion.div
@@ -63,7 +63,7 @@ const HomeInfo = ({ catData }) => {
         }}
       ></motion.div>
       <Box mt={"140px"}>
-        <Catalogue data={catData} />
+        <Catalogue dvWidth={dvWidth} data={catData} />
       </Box>
       <motion.div
         className={style.circleTrans}

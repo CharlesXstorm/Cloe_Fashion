@@ -13,6 +13,7 @@ import Explore from "./pages/Explore";
 import Gele from "./pages/Gele";
 import Hair from "./pages/Hair";
 import { dataObj } from "./utils/GeleData";
+import Footer from "./components/Footer";
 // import { geleData } from "./utils/GeleData";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </Box>
   );
 }
