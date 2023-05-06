@@ -106,7 +106,7 @@ const Contact = () => {
       !mail.trim().includes("@")
     ) {
       setMessage(
-        "Please check if name is incuded or email is written properly with the '@' symbol"
+        "Please check if name is included or email is written properly with the '@' symbol"
       );
       setErrorColor("#fff");
       setIsSubmitted(true);
