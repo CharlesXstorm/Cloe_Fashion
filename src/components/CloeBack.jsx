@@ -24,7 +24,17 @@ const CloeBack = ({ width }) => {
         {
           //rgbkineticstarts
 
-          <LiquidSlider />
+          <LiquidSlider>
+            <Box
+              sx={{
+                width: "100%",
+                display: "block",
+                height: "100vh"
+              }}
+              id="rbgShiftSlider"
+              className="rbgShiftSlider"
+            ></Box>
+          </LiquidSlider>
 
           //rgbkineticends
         }
