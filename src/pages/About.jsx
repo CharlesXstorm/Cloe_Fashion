@@ -57,7 +57,7 @@ const About = () => {
               textAlign: "center"
             }}
           >
-            As a fashion agency originated from Lagos Nigeria, the company has
+            As a fashion agency originating from Lagos Nigeria, the company has
             opened more than 10+ production and support offices around the world
             in strategic countries. Today, after almost fifteen years, Cloe
             continues to act as a bridge and bodyguard for brands globally, with
