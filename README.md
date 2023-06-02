@@ -1,16 +1,14 @@
-#Fitness App
+#Fashion Agency App
 
 click on image to visit 🌐
 
-<a href="https://keepfitapp.netlify.app" target="_blank"><img width="1239" alt="cloeapp" src="https://github.com/CharlesXstorm/Cloe_Fashion/assets/26228761/48003345-66c9-4723-bba3-c8e97f2682d0"></a>
+<a href="https://cloe.netlify.app" target="_blank"><img width="1239" alt="cloeFashion" src="https://github.com/CharlesXstorm/Cloe_Fashion/assets/26228761/48003345-66c9-4723-bba3-c8e97f2682d0"></a>
 
-<p>This app was created using React and Express.</p>
-<p>The frontend is very responsive. It was created with react, material-UI, and framer-motion</p>
-<p>It fetches exercise data from the backend API I created. The API data was originally gotten from an existing rapidAPI ("ExerciseDB").
-I did'nt use exerciseDB due to its restricted number of endpoint calls permitted per month.
-Since it's a personal project (Frontend/Backend), I felt it better to create a personal API where I can perform unlimited number of Endpoint calls.
+<p>This app was created using React, Framer-motion, Material-UI and CSS-module.</p>
+<p>It's an app for a fashion agency to display their contents</p>
+<p>It fetches content data from a util file. This file contains some data objects needed for page renderings.
 </p>
-<p>The exercise API I created was deployed to railway, an awesome platform to easily deploy node apps</p>
+<p>The form on the contact page has some verifications to it which dynamically renders a modal depending if it encounters an error or was submitted successfully</p>
 
 ### `npm run build` fails to minify
 
