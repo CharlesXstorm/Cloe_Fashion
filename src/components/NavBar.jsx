@@ -12,7 +12,7 @@ const navVariants = {
     borderRadius: "100%",
     left: "-2vh",
     transition: {
-      duration: 1.5,
+      duration: 0.5,
       ease: "easeInOut"
     }
   },
@@ -24,7 +24,7 @@ const navVariants = {
     borderRadius: "100%",
     left: 0,
     transition: {
-      duration: 1.5,
+      duration: 0.5,
       ease: "easeInOut"
     }
   }
@@ -60,7 +60,7 @@ const linkWrap = {
   visible: {
     transition: {
       // type: "spring",
-      delayChildren: 0.6,
+      delayChildren: 0.2,
       staggerChildren: 0.4,
       when: "beforeChildren",
       ease: "easeInOut"
@@ -172,7 +172,7 @@ const NavBar = ({ fill }) => {
                 zIndex: 9
               }}
             >
-              <Link className={style.link} to="/work" onClick={clickHandler}>
+              <Link className={style.link} to="#" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
@@ -237,7 +237,8 @@ const NavBar = ({ fill }) => {
       >
         <Link
           className={style.link}
-          to="/work"
+          to="#"
+          // to="/work"
           onClick={() => setNavClicked(true)}
         >
           <Typography

@@ -59,7 +59,7 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                     width={dvWidth > 800 ? "400px" : "200px"}
                     height={dvWidth > 800 ? "300px" : "100px"}
                     viewBox="0 0 2000 1000"
-                    enable-background="new 0 0 2000 1000"
+                    enableBackground="new 0 0 2000 1000"
                     space="preserve"
                   >
                     <motion.path
@@ -791,7 +791,7 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
         <Link
           onMouseOver={animate}
           onMouseOut={animateOut}
-          to={id === 1 ? "./gele" : "./hair"}
+          to={id === 1 ? "./gele" : "#"}
           style={{
             textDecoration: "none",
             color: "#fff",
@@ -945,14 +945,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1248.354,421.456c-2.239-0.458-4.082,0.275-6.026,1.456c-15.069,9.151-30.496,17.649-46.981,24.006
            c-12.678,4.888-25.63,8.253-39.488,6.597c-8.102-0.968-14.422-7.67-15.51-17.059c-1.385-11.96,0.481-23.725,2.056-35.492
@@ -971,14 +971,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M345.966,207.983c-8.567-0.207-17.02,0.684-25.521,1.817c-5.802,0.773-11.669,1.209-17.479,2.145
            c-9.144,1.473-18.397,2.337-27.474,4.123c-13.563,2.668-27.07,5.684-40.5,8.965c-22.616,5.525-44.939,12.137-66.467,21.034
@@ -993,14 +993,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M923.894,449.953c-5.541-1.236-9.934,2.292-14.417,4.19c-21.074,8.923-41.992,18.274-62.045,29.355
            c-17.219,9.516-34.374,19.209-49.476,32c-2.496,2.113-4.831,4.472-6.644,7.384c-1.622,2.604-3.298,5.004-1.853,8.038
@@ -1020,14 +1020,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M531.943,419.957c-5.276-2.262-10.204,0.565-14.948,1.706c-17.023,4.095-34.225,7.013-51.55,9.243
            c-17.302,2.227-34.638,4.229-51.994,5.98c-10.295,1.039-20.652,1.506-30.99,2.048c-27.311,1.432-54.651,2.015-81.986,1.396
@@ -1043,14 +1043,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1441.829,427.456c-4.545,5.139-5.324,11.961-6.707,18.063c-2.549,11.245-4.943,22.727-4.23,34.426
            c0.355,5.834,1.072,11.72,3.959,16.991c3.134,5.721,9.684,8.679,16.479,8.043c12.111-1.132,22.214-6.527,31.516-14.004
@@ -1069,14 +1069,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1932.268,418.457c-7.378,7.858-16.686,12.938-26.001,17.991c-23.245,12.609-47.948,21.621-73.536,27.796
            c-16.786,4.05-34.079,6.203-51.434,3.147c-8.312-1.463-16.358-3.872-20.995-11.946c-3.286-5.72-4.301-12.158-3.884-18.482
@@ -1094,14 +1094,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M356.965,163.988c-1.376,13.642-4.733,26.839-8.417,40.018c-5.063,18.117-10.819,36.001-17.122,53.705
            c-9.839,27.637-19.68,55.279-30.026,82.728c-11.853,31.447-24.239,62.693-36.501,93.985c-0.429,1.095-0.177,2.043-0.422,3.03"
@@ -1114,14 +1114,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1006.384,804.908c-3.315-1.086-6.365,0.474-9.495,1.024c-41.554,7.311-81.773,19.479-121.489,33.47
            c-29.092,10.25-57.887,21.247-85.992,33.991c-0.478,0.216-0.985,0.418-1.499,0.493c-5.05,0.745-7.096,4.139-9.779,8.331
@@ -1136,14 +1136,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M789.911,417.957c-8.499,4-16.823,8.439-25.533,11.908c-18.839,7.501-37.504,15.721-57.958,18.071
            c-6.173,0.709-12.293,1.004-18.516-0.394c-8.782-1.973-13.594-7.618-16.787-15.563c-3.959-9.855-4.218-20.193-4.658-30.521
@@ -1157,14 +1157,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M864.401,680.424c0.275-2.88-0.586-5.271-3.157-7.288c-4.167,1.213-5.568,5.257-6.663,8.352
            c-6.202,17.534-11.883,35.252-17.665,52.934c-5.717,17.481-11.242,35.024-17.036,52.48c-6.448,19.428-13.179,38.752-21.43,57.52
@@ -1178,14 +1178,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1133.367,807.908c-4.297-0.818-7.39,2.241-10.964,3.589c-9.938,3.746-19.704,7.849-30.528,8.444
            c-10.657,0.587-14.037-5.819-15.604-13.011c-1.422-6.526-0.575-13.021-0.871-19.521c-0.126-2.778,0.047-5.896-2.585-7.392
@@ -1202,14 +1202,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1208.858,841.903c-5.599,3.053-10.147,7.546-14.897,11.617c-14.507,12.429-28.808,25.148-41.055,39.911
            c-3.976,4.79-7.999,9.569-9.635,15.938c-1.194,4.651-0.145,6.948,4.588,8.052c6.303,1.471,12.137-0.014,17.475-3.078
@@ -1224,14 +1224,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M630.431,383.461c-10.702,7.679-20.007,16.968-29.438,26.057c-16.374,15.78-32.237,32.091-48.615,47.868
            c-8.07,7.773-16.794,14.908-27.939,18.042c-7.194,2.024-11.975-1.743-11.692-8.985c0.343-8.792,3.819-16.378,7.33-23.928
@@ -1247,14 +1247,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1431.83,820.906c-5.474-0.193-9.838,3.08-14.432,5.146c-15.459,6.954-30.784,14.234-44.623,24.264
            c-2.936,2.127-5.322,4.696-7.915,7.108c-1.246,1.158-2.266,3.017-1.383,4.387c0.783,1.214,2.323,2.151,4.358,2.192
@@ -1271,14 +1271,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M216.982,434.455c-1.277,5.823,1.123,11.326,1.655,16.983c1.668,17.704,1.244,35.309,0.009,53.019
            c-0.901,12.905-2.593,25.678-4.173,38.482c-0.56,4.536-2.263,9.097,0.509,13.5"
@@ -1291,14 +1291,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M262.477,439.954c-1.276,7.28-4.975,13.682-7.577,20.467c-11.654,30.398-23.597,60.684-35.352,91.043
            c-0.29,0.748-0.448,1.463-1.068,1.972c-6.318,5.188-6.13,13.2-8.366,20.044c-5.24,16.031-9.8,32.284-14.621,48.452
@@ -1313,14 +1313,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1398.334,792.41c-3.05-2.167-0.776-4.503,0.07-6.47c3.145-7.306,7.651-13.851,11.874-20.562c2.448-3.894,5.457-7.789,4.109-12.758
            c-5.495-2.667-9.858,0.981-13.411,3.495c-13.102,9.27-24.795,20.212-33.571,33.838c-2.563,3.98-4.698,8.373-4.066,13.454"
@@ -1333,14 +1333,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1630.805,419.457c-3.787-0.844-7.146,0.928-10.472,2.075c-19.396,6.686-39.374,11.004-59.545,14.264
            c-9.882,1.597-19.88,3.097-29.971,3.135c-1.333,0.005-2.666-0.31-3.999-0.477"
@@ -1353,14 +1353,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M449.453,231.48c-1.619-8.106-7.873-11.742-14.5-14.993c-8.681-4.259-17.928-6.25-27.479-7.613
            c-14.124-2.015-28.273-2.795-42.509-2.964c-5.36-0.063-10.61,2.197-15.999,0.574"
@@ -1373,14 +1373,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1025.381,418.457c-3.114-1.912-6.145-0.043-8.974,0.61c-28.315,6.535-56.091,14.852-83.047,25.807
            c-1.079,0.438-2.634,1.553-3.967,0.08"
@@ -1393,14 +1393,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1264.852,809.907c-3.505,10.224-6.764,20.507-3.971,31.488c1.64,6.447,4.942,8.279,11.475,7.031
            c4.86-0.929,9.233-2.884,12.972-6.049c8.593-7.273,16.353-15.287,21.519-25.472"
@@ -1413,14 +1413,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1523.318,440.954c-1.832-1.338-3.951-0.982-5.999-0.996c-16.036-0.107-32.102,0.693-48.004-2.457
            c-8.825-1.748-17.328-4.19-24.979-9.061c-1.527-0.973-3.039-1.988-3.531-3.979c-0.53-2.147-2.144-3.45-3.977-4.505"
@@ -1433,14 +1433,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1194.859,787.41c-6.194,1.228-10.648,5.612-15.416,9.11c-15.558,11.415-30.564,23.584-46.609,34.335
            c-3.539,2.371-7.264,4.822-12.165,4.522c-0.498-2.707-0.404-4.817,0.678-6.984c8.072-16.173,18.968-29.861,34.53-39.463
@@ -1454,14 +1454,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1264.852,806.408c0.98,3.896,4.384,4.832,7.508,5.976c7.089,2.596,14.585,2.809,21.988,3.517c3.656,0.351,7.352-0.559,11.01,0.466
            c1.725,0.482,3.386-0.601,3.911-1.988c3.417-9.021,8.443-17.597,9.01-27.472c0.688-11.994-4.951-18.195-18.443-15.044
@@ -1475,14 +1475,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1283.349,328.468c1.418,2.808-0.205,5.232-2.081,6.365c-4.619,2.792-4.332,7.578-5.278,11.665c-1.179,5.087,1.48,7.192,6.345,5.426
            c8.007-2.907,14.304-8.214,20.108-14.366c2.519-2.67,3.236-5.272,2.796-8.541c-5.097-2.96-9.479-0.455-13.882,1.472
@@ -1496,14 +1496,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1215.357,772.412c-6.731,2.689-12.447,6.946-17.45,12.045c-5.546,5.655-5.441,18.343-0.021,26.432
            c2.298,3.428,4.201,7.15,6.605,10.419c3.939,5.355,4.471,11.788,6.865,17.597"
@@ -1516,14 +1516,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M193.985,625.931c-2.6,1.448-4.13,3.678-5.016,6.494c-3.46,11.011-7.271,21.923-10.321,33.045c-1.021,3.72-0.161,7.955-0.161,11.954
            "
@@ -1536,14 +1536,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1484.323,803.908c-15.951,3.162-31.498,7.661-46.506,13.97c-0.909,0.383-1.987,0.361-2.987,0.528"
                   />
@@ -1555,14 +1555,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1456.327,385.96c0.881,2.087,0.57,4.036-0.485,6.007c-4.656,8.704-8.703,17.682-12.031,26.982c-0.594,1.66-1.809,2.846-3.481,3.506
            "
@@ -1575,14 +1575,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1128.868,137.492c-3.264-0.274-3.962,2.149-5.046,4.478c-2.519,5.402-5.387,10.641-7.857,16.063
            c-0.427,0.94-1.334,0.717-1.595,1.457"
@@ -1595,14 +1595,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1271.85,789.41c0.904,4.882-3.49,8.021-4.2,12.466c-0.185,1.158-0.55,3.636-3.208,4.124c-2.09-2.115-1.429-4.545-0.61-7.098
            c1.83-5.713,6.399-9.133,10.487-13.025c3.948-3.758,8.198-7.318,10.53-12.465"
@@ -1615,14 +1615,14 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                       transition: { delay: 0.5, duration: 1 }
                     }}
                     transition={{ duration: 1.5, ease: "easeInOut" }}
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeMiterlimit="10"
                     d="
            M1480.324,352.465c1.355,3.008-0.687,4.623-2.459,6.537c-2.212,2.389-5.688,4.226-4.54,8.461"
                   />

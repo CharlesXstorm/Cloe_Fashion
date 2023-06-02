@@ -77,6 +77,7 @@ const Contact = () => {
   // const mailRef = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const timeOut = setTimeout(() => {
       setLoading(false);
     }, [4000]);
@@ -155,7 +156,8 @@ const Contact = () => {
           backgroundColor: "#000",
           position: "fixed",
           width: "100%",
-          height: "120px"
+          height: "120px",
+          zIndex: 1
         }}
       ></motion.div>
       <Box

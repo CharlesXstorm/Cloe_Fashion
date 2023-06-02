@@ -4,6 +4,13 @@ root {
   --backdrop: green;
 }
 
+html {
+  -moz-scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 150px; */
+}
+
 canvas {
   position: absolute;
   z-index: 0;

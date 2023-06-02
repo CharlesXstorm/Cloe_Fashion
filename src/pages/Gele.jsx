@@ -9,6 +9,7 @@ const Gele = ({ data }) => {
   const [dvWidth, setdvWidth] = useState(800);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const timeOut = setTimeout(() => {
       setLoading(false);
     }, [4000]);

@@ -190,12 +190,10 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
         }}
       >
         <motion.div
-          className={style.div}
+          // className={style.div}
           whileHover={{
-            // backgroundColor: "#000",
-
+            backgroundColor: "#000",
             color: "#000",
-            border: "2px solid orange",
             scale: 1.1,
             cursor: "pointer",
             transition: {
@@ -209,7 +207,9 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
             borderRadius: "10px",
             border: "2px solid #fff",
             justifyContent: "center",
-            backdropFilter: "blur(12px)"
+            backdropFilter: "blur(12px)",
+            cursor: "pointer"
+            // "&:hover": { border: "2px solid #000" }
             // backgroundColor: `${stroke === "#fff" ? "transparent" : stroke}`
           }}
         >
@@ -223,6 +223,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
               className={style.typo}
               fontFamily={"newyorkregular"}
               fontSize={"25px"}
+              // sx={{ "&:hover": { color: "#000" } }}
             >
               Explore
             </Typography>
