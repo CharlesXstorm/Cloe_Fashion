@@ -172,7 +172,7 @@ const NavBar = ({ fill }) => {
                 zIndex: 9
               }}
             >
-              <Link className={style.link} to="#" onClick={clickHandler}>
+              <Link className={style.link} to="/work" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
