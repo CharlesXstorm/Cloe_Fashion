@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Stack, Box, Typography } from "@mui/material";
 
 import LiquidSlider from "./LiquidSlider";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import style from "./CloeBack.module.css";
+// import { queen } from "images/Queen.png";
+
+const img = {
+  hidden: { opacity: 0.2, transition: { duration: 1, ease: "easeInOut" } },
+  visible: { opacity: 1, transition: { duration: 1, ease: "easeInOut" } }
+};
 
 const CloeBack = ({ width }) => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((count) => (count >= 2 ? 0 : count + 1));
+    }, [5000]);
+
+    return () => clearInterval(interval);
+  }, [count]);
+
   return (
     <>
       {/* <NavBar /> */}
@@ -25,15 +42,59 @@ const CloeBack = ({ width }) => {
           //rgbkineticstarts
 
           <LiquidSlider>
-            <Box
-              sx={{
-                width: "100%",
-                display: "block",
-                height: "100vh"
-              }}
-              id="rbgShiftSlider"
-              className="rbgShiftSlider"
-            ></Box>
+            {/* <AnimatePresence mode="wait"> */}
+            {count === 0 && (
+              <motion.div
+                className={style.imgCont}
+                variants={img}
+                initial="hidden"
+                animate="visible"
+                // transition={{ duration: 1, ease: "easeInOut" }}
+                exit="hidden"
+              >
+                <img
+                  className={style.imgbody}
+                  src="https://dl.dropboxusercontent.com/scl/fi/ext810lfqa8uiqsag9tbx/slide1min.jpg?rlkey=w0piked76wepkaxuzoekvrmqp&dl=0"
+                  alt="hero"
+                  // height="100%"
+                />
+              </motion.div>
+            )}
+            {count === 1 && (
+              <motion.div
+                className={style.imgCont}
+                variants={img}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                // transition={{ duration: 1, ease: "easeInOut" }}
+              >
+                <img
+                  className={style.imgbody}
+                  src="https://dl.dropboxusercontent.com/scl/fi/oanu2l9blqn8suy222ff8/slide2min.jpg?rlkey=ifip1l8uljtxc4xy4g7qevdxg&dl=0"
+                  alt="hero"
+                  // height="100%"
+                />
+              </motion.div>
+            )}
+            {count === 2 && (
+              <motion.div
+                className={style.imgCont}
+                variants={img}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                // transition={{ duration: 1, ease: "easeInOut" }}
+              >
+                <img
+                  className={style.imgbody}
+                  src="https://dl.dropboxusercontent.com/scl/fi/8969t4fac8m6sagf92p1q/slide3min.jpg?rlkey=su5una32rog66jsrzcd740cez&dl=0"
+                  alt="hero"
+                  // height="100%"
+                />
+              </motion.div>
+            )}
+            {/* </AnimatePresence> */}
           </LiquidSlider>
 
           //rgbkineticends

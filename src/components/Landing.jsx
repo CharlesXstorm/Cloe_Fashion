@@ -29,6 +29,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
           width: "100vw",
           overflow: "hidden",
           zIndex: "1"
+          // border: "2px solid red"
         }}
       >
         <svg
@@ -37,8 +38,9 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
           link="http://www.w3.org/1999/xlink"
           x="0px"
           y="0px"
-          width="1280px" //
-          height="812px"
+          // width="1280px"
+          // height="812px"
+          width="100%"
           viewBox={`0 0 1280 812`}
           enableBackground={`new 0 0 1280 812`}
           style={{
@@ -51,7 +53,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
               initial={{ pathLength: 0 }}
               animate={{
                 pathLength: 1,
-                transition: { duration: 4, delay: 4, ease: "easeInOut" }
+                transition: { duration: 2.5, delay: 2, ease: "easeInOut" }
               }}
               exit={{
                 pathLength: 0,
@@ -100,7 +102,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
               initial={{ pathLength: 0 }}
               animate={{
                 pathLength: 1,
-                transition: { duration: 4, delay: 4, ease: "easeInOut" }
+                transition: { duration: 2.5, delay: 2, ease: "easeInOut" }
               }}
               exit={{
                 pathLength: 0,
@@ -122,7 +124,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
               initial={{ pathLength: 0 }}
               animate={{
                 pathLength: 1,
-                transition: { duration: 4, delay: 4, ease: "easeInOut" }
+                transition: { duration: 2, delay: 2.5, ease: "easeInOut" }
               }}
               exit={{
                 pathLength: 0,
@@ -148,7 +150,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
               initial={{ pathLength: 0 }}
               animate={{
                 pathLength: 1,
-                transition: { duration: 3, delay: 4, ease: "easeInOut" }
+                transition: { duration: 2, delay: 2.5, ease: "easeInOut" }
               }}
               exit={{
                 pathLength: 0,
@@ -215,7 +217,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
         >
           <Link
             className={style.link}
-            to="/explore"
+            to="explore"
             // className={style.link}
             style={{ textDecoration: "none" }}
           >
@@ -230,12 +232,12 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
           </Link>
         </motion.div>
       </Box>
-      <motion.div
+      {/* <motion.div
         className={style.circleTrans}
         initial={{ originX: 0 }}
         exit={{ scale: 3000, top: 10, originX: 0 }}
-        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
-      ></motion.div>
+        transition={{ duration: 0.5, delay: 0, ease: "easeInOut" }}
+      ></motion.div> */}
       <CloeBack width={width} />
     </Stack>
   );

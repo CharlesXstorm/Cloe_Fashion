@@ -15,7 +15,7 @@ const About = () => {
         // backgroundColor: "#fff"
         backgroundColor: "#242424"
       }}
-      transition={{ duration: 1.2, ease: "easeInOut" }} //delay: 4,
+      transition={{ duration: 0.5, ease: "easeInOut" }} //delay: 4,
       style={{
         position: "absolute",
         top: 0,
@@ -34,7 +34,8 @@ const About = () => {
           backgroundColor: "#000",
           position: "fixed",
           width: "100%",
-          height: "120px"
+          height: "120px",
+          zIndex: 3
         }}
       ></motion.div>
 
@@ -123,7 +124,7 @@ const About = () => {
         // style={{ zIndex: "4", position: "absolute" }}
         initial={{ originX: 0 }}
         exit={{ scale: 3000, top: 10, originX: 0 }}
-        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
       ></motion.div>
     </motion.div>
   );

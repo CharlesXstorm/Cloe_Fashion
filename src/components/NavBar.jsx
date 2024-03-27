@@ -61,7 +61,7 @@ const linkWrap = {
     transition: {
       // type: "spring",
       delayChildren: 0.2,
-      staggerChildren: 0.4,
+      staggerChildren: 0.2,
       when: "beforeChildren",
       ease: "easeInOut"
     }
@@ -78,12 +78,19 @@ const NavBar = ({ fill }) => {
   };
   return (
     <Stack
-      sx={{ position: "fixed", top: "0", left: "0", width: "100vw" }}
+      sx={{
+        position: "fixed",
+        top: "0",
+        left: "0",
+        width: "100vw"
+        // backgroundColor:
+        // zIndex: 10
+      }}
       p="20px"
       direction={"row"}
       justifyContent={"center"}
       color={"#fff"}
-      zIndex={"2"}
+      zIndex={2}
     >
       <Stack alignSelf={"center"}>
         <Link to="/" style={{ textDecoration: "none", cursor: "pointer" }}>
@@ -172,7 +179,11 @@ const NavBar = ({ fill }) => {
                 zIndex: 9
               }}
             >
-              <Link className={style.link} to="#" onClick={clickHandler}>
+              <Link
+                className={style.link}
+                to="explore/gele"
+                onClick={clickHandler}
+              >
                 <motion.p
                   variants={linkVariants}
                   style={{
@@ -185,7 +196,7 @@ const NavBar = ({ fill }) => {
                   Models.
                 </motion.p>
               </Link>
-              <Link className={style.link} to="/about" onClick={clickHandler}>
+              <Link className={style.link} to="about" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
@@ -198,7 +209,7 @@ const NavBar = ({ fill }) => {
                   About.
                 </motion.p>
               </Link>
-              <Link className={style.link} to="/contact" onClick={clickHandler}>
+              <Link className={style.link} to="contact" onClick={clickHandler}>
                 <motion.p
                   variants={linkVariants}
                   style={{
@@ -237,7 +248,7 @@ const NavBar = ({ fill }) => {
       >
         <Link
           className={style.link}
-          to="#"
+          to="explore/gele"
           // to="/work"
           onClick={() => setNavClicked(true)}
         >
@@ -251,7 +262,7 @@ const NavBar = ({ fill }) => {
         </Link>
         <Link
           className={style.link}
-          to="/about"
+          to="about"
           onClick={() => setNavClicked(true)}
         >
           <Typography
@@ -264,7 +275,7 @@ const NavBar = ({ fill }) => {
         </Link>
         <Link
           className={style.link}
-          to="/contact"
+          to="contact"
           onClick={() => setNavClicked(true)}
         >
           <Typography

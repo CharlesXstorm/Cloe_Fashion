@@ -2,18 +2,16 @@ import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 
 const LiquidSlider = (props) => {
-  useEffect(() => {
-    window.rbgShiftSlider();
-
-    // return () => window.rbgShiftSlider();
-  }, []);
+  // useEffect(() => {
+  //   window.rbgShiftSlider();
+  // }, []);
 
   return (
     <Box
       className={"slider"}
       sx={{
         position: "inherit",
-        transformOrigin: "0",
+        // transformOrigin: "2",
         width: { lg: "60vw", xs: "100vw" },
         height: "100vh",
 

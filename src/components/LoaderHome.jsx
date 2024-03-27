@@ -68,7 +68,7 @@ const LoaderHome = ({ vWidth, setVheight, hasLoaded, setHasLoaded }) => {
             ref={lineRef}
             initial={{ height: "0vh" }}
             transition={{
-              duration: 4,
+              duration: 2,
               // delay: 2,
               times: [0, 0.7, 1],
               ease: "easeInOut"

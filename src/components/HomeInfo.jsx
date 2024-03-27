@@ -21,7 +21,8 @@ const HomeInfo = ({ catData }) => {
         clipPath: "circle(140% at 0% 0%)",
         backgroundColor: "#242424"
       }}
-      transition={{ duration: 1.2, ease: "easeInOut" }} //delay: 4,
+      // transition={{ duration: 1.2, ease: "easeInOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       style={{
         position: "absolute",
         top: 0,
@@ -59,7 +60,8 @@ const HomeInfo = ({ catData }) => {
           backgroundColor: "#000",
           position: "fixed",
           width: "100%",
-          height: "120px"
+          height: "120px",
+          zIndex: 2
         }}
       ></motion.div>
       <Box mt={"140px"}>
@@ -69,7 +71,8 @@ const HomeInfo = ({ catData }) => {
         className={style.circleTrans}
         initial={{ originX: 0 }}
         exit={{ scale: 3000, top: 10, originX: 0 }}
-        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
+        // transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
       ></motion.div>
     </motion.div>
   );

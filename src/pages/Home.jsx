@@ -25,7 +25,7 @@ const Home = ({ setFill, fill }) => {
   useEffect(() => {
     setTimeout(() => {
       setHasLoaded(false);
-    }, [2000]);
+    }, [1000]);
 
     setVwidths(window.innerWidth);
   }, []);

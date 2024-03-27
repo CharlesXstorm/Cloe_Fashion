@@ -48,7 +48,8 @@ const Gele = ({ data }) => {
           backgroundColor: "#000",
           position: "fixed",
           width: "100%",
-          height: "120px"
+          height: "120px",
+          zIndex: 3
         }}
       ></motion.div>
       <Box mt={"140px"}>
@@ -58,7 +59,7 @@ const Gele = ({ data }) => {
         className={style.circleTrans}
         initial={{ originX: 0 }}
         exit={{ scale: 3000, top: 10, originX: 0 }}
-        transition={{ duration: 2, delay: 2, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
       ></motion.div>
     </motion.div>
   );
