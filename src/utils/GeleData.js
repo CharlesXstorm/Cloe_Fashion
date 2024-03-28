@@ -54,3 +54,12 @@ export const dataObj = [...geleData].map((item, index) => ({
   src: item,
   srcbw: gelebw[index]
 }));
+
+export const imgSlide = {
+  slide1:
+    "https://dl.dropboxusercontent.com/scl/fi/ext810lfqa8uiqsag9tbx/slide1min.jpg?rlkey=w0piked76wepkaxuzoekvrmqp&dl=0",
+  slide2:
+    "https://dl.dropboxusercontent.com/scl/fi/oanu2l9blqn8suy222ff8/slide2min.jpg?rlkey=ifip1l8uljtxc4xy4g7qevdxg&dl=0",
+  slide3:
+    "https://dl.dropboxusercontent.com/scl/fi/8969t4fac8m6sagf92p1q/slide3min.jpg?rlkey=su5una32rog66jsrzcd740cez&dl=0"
+};

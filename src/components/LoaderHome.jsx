@@ -7,10 +7,10 @@ import {
   useMotionValueEvent,
   useMotionValue
 } from "framer-motion";
-import $ from "jquery";
+// import $ from "jquery";
 import NavBar from "./NavBar";
 
-const LoaderHome = ({ vWidth, setVheight, hasLoaded, setHasLoaded }) => {
+const LoaderHome = ({ vWidth, setVheight, isLoading }) => {
   // const [vWidth, setVwidth] = useState("");
   let cloeRef = useRef(null);
   let lineRef = useRef(null);
@@ -48,7 +48,7 @@ const LoaderHome = ({ vWidth, setVheight, hasLoaded, setHasLoaded }) => {
 
   return (
     <AnimatePresence mode="wait">
-      {hasLoaded && (
+      {isLoading && (
         <Stack
           id="remove"
           ref={cloeRef}

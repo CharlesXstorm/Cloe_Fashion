@@ -119,13 +119,12 @@ const About = () => {
         //backdropends
       }
 
-      <motion.div
+      {/* <motion.div
         className={style.circleTrans}
-        // style={{ zIndex: "4", position: "absolute" }}
         initial={{ originX: 0 }}
         exit={{ scale: 3000, top: 10, originX: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-      ></motion.div>
+      ></motion.div> */}
     </motion.div>
   );
 };

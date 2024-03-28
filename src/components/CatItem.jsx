@@ -820,8 +820,8 @@ const CatItem = ({ src, srcbw, text, id, isEven, dvWidth }) => {
                 clipPath: "polygon(0% 0, 100% 0, 100% 100%, 0% 100%)"
               }}
               transition={{
-                duration: 1.5,
-                delay: 2,
+                duration: 0.5,
+                // delay: 1,
                 ease: "easeInOut"
               }}
               style={{

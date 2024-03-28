@@ -7,35 +7,23 @@ import Landing from "../components/Landing";
 // import HomeInfo from "../components/HomeInfo";
 // import { AnimatePresence } from "framer-motion";
 
-const Home = ({ setFill, fill }) => {
-  const [hasLoaded, setHasLoaded] = useState(true);
-  const [vWidth, setVwidths] = useState(1280);
-  // const [isExploring, setIsExploring] = useState(false);
-  // const [vHeight, setVheight] = useState(0);
+const Home = ({ setFill, fill, slide1, slide2, slide3, isLoading, vWidth }) => {
+  // const [hasLoaded, setHasLoaded] = useState(true);
+  // const [vWidth, setVwidths] = useState(1280);
 
-  // const [hasLanded, setHasLanded] = useState(!false);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setHasLoaded(false);
+  //   }, [1000]);
 
-  // const { scrollYProgress } = useScroll();
-
-  // useMotionValueEvent(scrollYProgress, "change", (e) => {
-  //   // setScroll(e > 0.1 ? false : true);
-  //   console.log(e);
-  // });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setHasLoaded(false);
-    }, [1000]);
-
-    setVwidths(window.innerWidth);
-  }, []);
+  //   setVwidths(window.innerWidth);
+  // }, []);
 
   return (
     <>
       {ReactDOM.createPortal(
         <LoaderHome
-          hasLoaded={hasLoaded}
-          setHasLoaded={setHasLoaded}
+          isLoading={isLoading}
           vWidth={vWidth}
           // setVheight={setVheight}
         />,
@@ -48,6 +36,9 @@ const Home = ({ setFill, fill }) => {
         // setIsExploring={setIsExploring}
         setFill={setFill}
         fill={fill}
+        slide1={slide1}
+        slide2={slide2}
+        slide3={slide3}
       />
 
       {/* <AnimatePresence>

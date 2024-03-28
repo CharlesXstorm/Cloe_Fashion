@@ -5,7 +5,16 @@ import CloeBack from "./CloeBack";
 import { Link } from "react-router-dom";
 import style from "./Landing.module.css";
 
-const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
+const Landing = ({
+  width,
+  scale,
+  setIsExploring,
+  fill,
+  setFill,
+  slide1,
+  slide2,
+  slide3
+}) => {
   const [stroke, setStroke] = useState("#fff");
 
   // console.log(fill);
@@ -238,7 +247,7 @@ const Landing = ({ width, scale, setIsExploring, fill, setFill }) => {
         exit={{ scale: 3000, top: 10, originX: 0 }}
         transition={{ duration: 0.5, delay: 0, ease: "easeInOut" }}
       ></motion.div> */}
-      <CloeBack width={width} />
+      <CloeBack width={width} slide1={slide1} slide2={slide2} slide3={slide3} />
     </Stack>
   );
 };

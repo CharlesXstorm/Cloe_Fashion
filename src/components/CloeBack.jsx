@@ -5,14 +5,20 @@ import { Stack, Box, Typography } from "@mui/material";
 import LiquidSlider from "./LiquidSlider";
 import { AnimatePresence, motion } from "framer-motion";
 import style from "./CloeBack.module.css";
-// import { queen } from "images/Queen.png";
 
 const img = {
-  hidden: { opacity: 0.2, transition: { duration: 1, ease: "easeInOut" } },
-  visible: { opacity: 1, transition: { duration: 1, ease: "easeInOut" } }
+  hidden: {
+    opacity: 0.2,
+    scale: (1, 1)
+  },
+  visible: {
+    opacity: 1,
+    scale: (1.1, 1.1),
+    transition: { duration: 5, opacity: { duration: 1 }, ease: "linear" }
+  }
 };
 
-const CloeBack = ({ width }) => {
+const CloeBack = ({ width, slide1, slide2, slide3 }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -49,15 +55,9 @@ const CloeBack = ({ width }) => {
                 variants={img}
                 initial="hidden"
                 animate="visible"
-                // transition={{ duration: 1, ease: "easeInOut" }}
                 exit="hidden"
               >
-                <img
-                  className={style.imgbody}
-                  src="https://dl.dropboxusercontent.com/scl/fi/ext810lfqa8uiqsag9tbx/slide1min.jpg?rlkey=w0piked76wepkaxuzoekvrmqp&dl=0"
-                  alt="hero"
-                  // height="100%"
-                />
+                <img className={style.imgbody} src={slide1} alt="hero" />
               </motion.div>
             )}
             {count === 1 && (
@@ -71,7 +71,7 @@ const CloeBack = ({ width }) => {
               >
                 <img
                   className={style.imgbody}
-                  src="https://dl.dropboxusercontent.com/scl/fi/oanu2l9blqn8suy222ff8/slide2min.jpg?rlkey=ifip1l8uljtxc4xy4g7qevdxg&dl=0"
+                  src={slide2}
                   alt="hero"
                   // height="100%"
                 />
@@ -88,7 +88,7 @@ const CloeBack = ({ width }) => {
               >
                 <img
                   className={style.imgbody}
-                  src="https://dl.dropboxusercontent.com/scl/fi/8969t4fac8m6sagf92p1q/slide3min.jpg?rlkey=su5una32rog66jsrzcd740cez&dl=0"
+                  src={slide3}
                   alt="hero"
                   // height="100%"
                 />

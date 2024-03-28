@@ -420,12 +420,12 @@ const Contact = () => {
         //backdropends
       }
 
-      <motion.div
+      {/* <motion.div
         className={transit.circleTrans}
         initial={{ originX: 0 }}
         exit={{ scale: 3000, top: 10, originX: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-      ></motion.div>
+      ></motion.div> */}
     </motion.div>
   );
 };

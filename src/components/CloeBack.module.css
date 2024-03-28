@@ -13,7 +13,7 @@
 }
 @media only screen and (max-width: 540px) {
   .imgbody {
-    transform-origin: 40% 30%;
+    transform-origin: 40% 50%;
     transform: scale(1, 1);
   }
 }
