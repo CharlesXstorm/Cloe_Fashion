@@ -2,7 +2,7 @@
 
 click on image to visit 🌐
 
-<a href="https://cloe.netlify.app" target="_blank"><img width="1239" alt="cloeFashion" src="https://github-production-user-asset-6210df.s3.amazonaws.com/26228761/242962149-be8648e5-e592-4b64-84b7-af3d49b181d3.png"></a>
+<a href="https://cloefashion.netlify.app" target="_blank"><img width="1239" alt="cloeFashion" src="https://github-production-user-asset-6210df.s3.amazonaws.com/26228761/242962149-be8648e5-e592-4b64-84b7-af3d49b181d3.png"></a>
 
 <p>This app was created using React, Framer-motion, Material-UI and CSS-module.</p>
 <p>It's an app for a fashion agency to display their contents</p>
